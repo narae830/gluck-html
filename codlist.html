@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>GLUCK 퍼블리싱 파일리스트</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css">
+    <style>
+        body{background:#f2f2f2}
+        .guideWrap{position:relative;width:1024px;margin:0 auto;padding:50px 20px}
+        .guideHeader{width:100%;text-align:center}
+        .guideHeader h1{height:64px}
+        .guideHeader p{margin-top:20px;color:#3EB6ED;font-size:20px}
+        .guideContent{margin-top:50px}
+        .guideTable{font-size:14px;table-layout:auto;border-collapse:collapse;background:#fff}
+        .guideTable th{padding:10px;text-align:center;color:#fff;background:#3EB6ED;text-transform:uppercase}
+        .guideTable td{padding:8px 10px;text-align:left;word-break:break-all;vertical-align:top;border:1px solid #ddd}
+        .guideTable tr:hover td{background:#f3faff!important}
+        .guideTable tr td:first-child{text-align:center}
+        .guideTable tr td a{color:#1E88E5;text-decoration:underline}
+        .guideTable tr td a[href*=none]{color:#999;text-decoration:none}
+        .guideTable td.file{color:#999}
+        .guideTable td.date{text-align:center}
+        .guideTable td.memo{font-size:12px}
+        .guideTable tr.del td{color:#999;text-decoration:line-through}
+        .guideTable tr.add td{background:#fcfad9}
+        .guideTable tr.dim td{background:#efefef}
+        .guideTit1{display:block;margin-bottom:25px;padding-bottom:20px;border-bottom:2px solid #333;font-size:24px;line-height:1;color:#333}
+        .guideTit2{display:block;margin:40px 0 20px;font-size:20px;font-weight:bold;line-height:1;color:#333}
+        .guideTit3{display:block;margin:25px 0 15px;font-size:15px;line-height:1;font-weight:bold;color:#333}
+        .guideTit4{display:block;margin:15px 0 10px;font-size:13px;line-height:1;font-weight:bold;color:#333}
+        .point{color:#d22a2a}
+    </style>
+</head>
+<body>
+    <div class="guideWrap">
+        <header class="guideHeader">
+            <h1><img src="./assets/images/logo.png" alt="GLUCK" style="height:64px"></h1>
+            <p>GLUCK 퍼블리싱 파일리스트</p>
+        </header>
+        <div class="guideContent">
+            <table class="guideTable">
+                <caption>화면목록</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" style="width:35px">No.</th>
+                        <th scope="col">1depth</th>
+                        <th scope="col">2depth</th>
+                        <th scope="col">3depth</th>
+                        <th scope="col">popup/etc</th>
+                        <th scope="col">file</th>
+                        <th scope="col" class="date">완료일</th>
+                        <th scope="col" class="date">최종수정일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="num"></td>
+                        <td>etc</td>
+                        <td>modal</td>
+                        <td>alert</td>
+                        <td></td>
+                        <td class="file"><a href="./html/etc/modal-alert.html" target="_blank">modal-alert.html</a></td>
+                        <td class="date">2022-10-03</td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>confirm</td>
+                        <td></td>
+                        <td class="file"><a href="./html/etc/modal-confirm.html" target="_blank">modal-confirm.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>email</td>
+                        <td>비밀번호찾기</td>
+                        <td></td>
+                        <td class="file"><a href="./html/etc/email-password.html" target="_blank">email-password.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="num"></td>
+                        <td>main</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="file"><a href="./html/main/main.html" target="_blank">main.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td>service</td>
+                        <td>Hospitals & Clinics</td>
+                        <td>목록</td>
+                        <td></td>
+                        <td class="file"><a href="./html/service/service-01-01.html" target="_blank">service-01-01.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>상세</td>
+                        <td></td>
+                        <td class="file"><a href="./html/service/service-01-02.html" target="_blank">service-01-02.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>상세(일반)</td>
+                        <td></td>
+                        <td class="file"><a href="./html/service/service-01-03.html" target="_blank">service-01-03.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>상세(근처 관광정보)</td>
+                        <td></td>
+                        <td class="file"><a href="./html/service/service-01-04.html" target="_blank">service-01-04.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>Food</td>
+                        <td>목록</td>
+                        <td></td>
+                        <td class="file"><a href="./html/service/service-02-01.html" target="_blank">service-02-01.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>상세</td>
+                        <td></td>
+                        <td class="file"><a href="./html/service/service-02-02.html" target="_blank">service-02-02.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>Shopping / Activities</td>
+                        <td>목록</td>
+                        <td></td>
+                        <td class="file"><a href="./html/service/service-03-01.html" target="_blank">service-03-01.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>상세</td>
+                        <td></td>
+                        <td class="file"><a href="./html/service/service-03-02.html" target="_blank">service-03-02.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>One day class / Tours</td>
+                        <td>목록</td>
+                        <td></td>
+                        <td class="file"><a href="./html/service/service-04-01.html" target="_blank">service-04-01.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>상세</td>
+                        <td></td>
+                        <td class="file"><a href="./html/service/service-04-02.html" target="_blank">service-04-02.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>Interpreter</td>
+                        <td>목록</td>
+                        <td></td>
+                        <td class="file"><a href="./html/service/service-05-01.html" target="_blank">service-05-01.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>필터(L)</td>
+                        <td class="file"><a href="./html/service/modal-languages.html" target="_blank">modal-languages.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>상세</td>
+                        <td></td>
+                        <td class="file"><a href="./html/service/service-05-02.html" target="_blank">service-05-02.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>문의(L)</td>
+                        <td class="file"><a href="./html/service/modal-enquires.html" target="_blank">modal-enquires.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>리뷰(L)</td>
+                        <td class="file"><a href="./html/service/modal-reviews.html" target="_blank">modal-reviews.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="num"></td>
+                        <td>mypage</td>
+                        <td>회원정보관리</td>
+                        <td>정보입력</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/modify-01.html" target="_blank">modify-01.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>회원탈퇴(L)</td>
+                        <td class="file"><a href="./html/mypage/modal-leave-01.html" target="_blank">modal-leave-01.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>비밀번호입력(L)</td>
+                        <td class="file"><a href="./html/mypage/modal-leave-02.html" target="_blank">modal-leave-02.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>Likes</td>
+                        <td>Hospitals / Clinics(T)</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/likes-tab-01.html" target="_blank">likes-tab-01.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>Food(T)</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/likes-tab-02.html" target="_blank">likes-tab-02.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>Shopping / Activities(T)</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/likes-tab-03.html" target="_blank">likes-tab-03.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>One Day Class(T)</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/likes-tab-04.html" target="_blank">likes-tab-04.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>Reviews</td>
+                        <td>Food(T)</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/reviews-tab-01.html" target="_blank">reviews-tab-01.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>Shopping / Activities(T)</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/reviews-tab-02.html" target="_blank">reviews-tab-02.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>One-Day Class(T)</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/reviews-tab-03.html" target="_blank">reviews-tab-03.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>Interpreter(T)</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/reviews-tab-04.html" target="_blank">reviews-tab-04.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>상세</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/reviews-details.html" target="_blank">reviews-details.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>Bookings</td>
+                        <td>One Day Class(T)</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/bookings-tab-01.html" target="_blank">bookings-tab-01.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>상세</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/bookings-receipt-01.html" target="_blank">bookings-receipt-01.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>Interpreter(T)</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/bookings-tab-02.html" target="_blank">bookings-tab-02.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>상세</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/bookings-receipt-02.html" target="_blank">bookings-receipt-02.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>Enquires</td>
+                        <td>One Day Class(T)</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/enquires-tab-01.html" target="_blank">enquires-tab-01.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>Interpreter(T)</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/enquires-tab-02.html" target="_blank">enquires-tab-02.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>상세</td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/enquires-details.html" target="_blank">enquires-details.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>Points</td>
+                        <td></td>
+                        <td></td>
+                        <td class="file"><a href="./html/mypage/points.html" target="_blank">points.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="num"></td>
+                        <td>user</td>
+                        <td>로그인</td>
+                        <td></td>
+                        <td></td>
+                        <td class="file"><a href="./html/user/login.html" target="_blank">login.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>filled</td>
+                        <td class="file"><a href="./html/user/login-filled.html" target="_blank">login-filled.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>아이디찾기</td>
+                        <td>정보입력</td>
+                        <td></td>
+                        <td class="file"><a href="./html/user/find-id-form.html" target="_blank">find-id-form.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>filled</td>
+                        <td class="file"><a href="./html/user/find-id-form-filled.html" target="_blank">find-id-form-filled.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>완료</td>
+                        <td></td>
+                        <td class="file"><a href="./html/user/find-id-compelete.html" target="_blank">find-id-compelete.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>비밀번호찾기</td>
+                        <td>정보입력</td>
+                        <td></td>
+                        <td class="file"><a href="./html/user/find-pw-form.html" target="_blank">find-pw-form.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>filled</td>
+                        <td class="file"><a href="./html/user/find-pw-form-filled.html" target="_blank">find-pw-form-filled.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>완료</td>
+                        <td></td>
+                        <td class="file"><a href="./html/user/find-pw-compelete.html" target="_blank">find-pw-compelete.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td>비밀번호변경</td>
+                        <td></td>
+                        <td class="file"><a href="./html/user/find-pw-reset.html" target="_blank">find-pw-reset.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>회원가입</td>
+                        <td>정보입력</td>
+                        <td></td>
+                        <td class="file"><a href="./html/user/join-form.html" target="_blank">join-form.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>filled</td>
+                        <td class="file"><a href="./html/user/join-form-filled.html" target="_blank">join-form-filled.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>이용약관</td>
+                        <td></td>
+                        <td></td>
+                        <td class="file"><a href="./html/user/terms-01.html" target="_blank">terms-01.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td></td>
+                        <td>개인정보처리방침</td>
+                        <td></td>
+                        <td></td>
+                        <td class="file"><a href="./html/user/terms-02.html" target="_blank">terms-02.html</a></td>
+                        <td class="date"></td>
+                        <td class="date"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        var title = document.querySelectorAll(".guideTable .num");
+        for (var i = 0; i < title.length; i++) {
+            title[i].innerText = i + 1;
+        }
+    </script>
+</body>
+</html>
+    

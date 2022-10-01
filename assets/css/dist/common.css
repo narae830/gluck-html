@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/notokr-regular.eot) format("eot"), url(../fonts/notokr-regular.woff2) format("woff2"), url(../fonts/notokr-regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/notokr-medium.eot) format("eot"), url(../fonts/notokr-medium.woff2) format("woff2"), url(../fonts/notokr-medium.woff) format("woff");
+}
+body, html {
+  -webkit-text-size-adjust: 100%;
+  min-width: 320px;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  color: #333;
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+  word-break: keep-all;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  overflow: overlay;
+}
+
+body, div, p, header, section, nav, footer, article, figure, aside, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, form, fieldset, input, textarea, button, select, span, strong, b, em, a, label {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, footer, section, article, nav, aside {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  empty-cells: show;
+  border-spacing: 0;
+}
+
+td, th {
+  position: relative;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #212121;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+  vertical-align: top;
+}
+
+fieldset, iframe {
+  border: 0;
+  vertical-align: top;
+}
+
+textarea {
+  resize: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+em, address, i {
+  font-style: normal;
+}
+
+u {
+  text-underline-position: under;
+}
+
+sub {
+  line-height: 1;
+  vertical-align: bottom;
+}
+
+sup {
+  line-height: 1;
+  vertical-align: top;
+}
+
+hr, legend {
+  display: none;
+}
+
+caption {
+  overflow: hidden;
+  position: static;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+strong, b {
+  font-weight: 500;
+}
+
+label {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+:before, :after {
+  box-sizing: inherit;
+}
+
+button {
+  font-family: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+a, button {
+  -webkit-tap-highlight-color: rgba(238, 186, 186, 0.2);
+}
+
+a, area, button, [role=button], input:not([type=range]), label, select, summary, textarea {
+  touch-action: manipulation;
+}
+
+input, textarea, select {
+  color: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: 0;
+  box-shadow: none;
+  outline: 0;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s 0s;
+  transition: background-color 5000s 0s;
+  -webkit-text-fill-color: #fff !important;
+}
+input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+input:-moz-placeholder {
+  color: #BDBDBD;
+}
+input::-moz-placeholder {
+  color: #BDBDBD;
+}
+input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+/* common */
+.txt-link {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+/* layout */
+.wrapper {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.inner,
+.footer-inner {
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+}
+.header-inner {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  padding: 0 60px;
+}
+.header-inner .side {
+  float: right;
+}
+
+.container {
+  position: relative;
+}
+
+.footer {
+  padding: 60px 0;
+}
+.footer-inner {
+  position: relative;
+  text-align: right;
+}/*# sourceMappingURL=common.css.map */

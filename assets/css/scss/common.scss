@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import 'base/_fonts.scss';
+@import 'base/_mixins.scss';
+@import 'base/_variables.scss';
+@import 'base/_reset.scss';
+
+/* common */
+.txt-link {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+/* layout */
+.wrapper {
+    min-width: $min-width;
+    margin: 0 auto;
+}
+.inner,
+.footer-inner{
+    margin: 0 auto;
+    padding:0 120px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: $z-gnb;
+    &-inner {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        padding: 0 60px;
+        .side {
+            float: right;
+        }
+    }
+}
+
+.container {
+    position: relative;
+}
+
+.footer {
+    padding: 60px 0;
+    &-inner {
+        position: relative;
+        text-align: right;
+    }
+}

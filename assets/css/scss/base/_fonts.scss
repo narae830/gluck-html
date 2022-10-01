@@ -1,0 +1,20 @@
+$path-fonts:"../fonts";
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-display:swap;
+    src: url(#{$path-fonts}/notokr-regular.eot) format('eot'),
+         url(#{$path-fonts}/notokr-regular.woff2) format('woff2'),
+		 url(#{$path-fonts}/notokr-regular.woff) format('woff');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-display:swap;
+    src: url(#{$path-fonts}/notokr-medium.eot) format('eot'),
+         url(#{$path-fonts}/notokr-medium.woff2) format('woff2'),
+         url(#{$path-fonts}/notokr-medium.woff) format('woff');
+}

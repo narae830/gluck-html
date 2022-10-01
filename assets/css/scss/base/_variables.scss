@@ -1,0 +1,48 @@
+// layout
+$min-width: 320px;
+
+// default
+$font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', arial, sans-serif;
+$font-body: 14px;
+$font-weight: 400;
+$line-height: 1.5;
+$line-height-headline: 1.2;
+$letter-spacing: -.5px;
+
+$bg-body: false;
+$color-paragraph: #333;
+$color-headline: #212121;
+$color-placeholder: #BDBDBD;
+
+// color
+$color-white: #fff;
+$color-black: #212121;
+$color-gray: #757575;
+$color-light-gray: #9E9E9E;
+$color-point: #3EB6ED;
+$color-notify: #D50000;
+
+// font
+$font-size-h1: 16px;
+$font-size-h2: 24px;
+
+$font-weight-bold: 500;
+$font-weight-headline: 500;
+
+// z-index
+$z-cookie-bar: 3000;
+$z-modal: 2999;
+$z-gnb: 2000;
+$z-nav: 1999;
+$z-lnb: 1000;
+$z-progress: 3200;
+$z-popup: 3100;
+$z-floating: 2500;
+$z-sticky: 500;
+$z-dropdown-list: 200;
+$z-picker: 200;
+$z-tooltip: 100;
+
+// path
+$path-image: "../images";
+$path-video: "../video";

@@ -1,0 +1,108 @@
+ 
+// 글자 숨기기
+@mixin text-hidden {
+  text-indent: -9999em;
+  overflow: hidden;
+}
+
+// 블릿
+@mixin list-bullet($color: #111) {
+  position: relative;
+  padding-left: 15px;
+  margin-top: 5px;
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin-right: 6px;
+    transform: translateY(-50%);
+    background-color: $color;
+  }
+}
+
+// 말줄임
+@mixin ellipsis($line, $line-height : $line-height) {
+    @if ($line == 1) { 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        white-space: nowrap; 
+    } @else { 
+        display: -webkit-box;
+        max-height:$line-height * $line + em; //ie 크로스브라우징
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        -webkit-box-orient: vertical; 
+        -webkit-line-clamp: $line; 
+        word-break: normal;
+    } 
+}
+
+// 웹키트 탭 하이라이트 컬러
+@mixin tap-highlight {
+    -webkit-tap-highlight-color: rgba(238, 186, 186, 0.2);
+  }
+
+// 그라디언트 생성
+@mixin horizontal-gradient($from, $to, $stop: 100%) {
+  // fallback/image non-cover color
+  background-color: $from;
+  // Firefox 3.6+
+  background-image: -moz-linear-gradient(left, $from 0%, $to $stop);
+  // Safari 4+, Chrome 1+
+  background-image: -webkit-gradient(linear,
+      left top,
+      right top,
+      color-stop(0%, $from),
+      color-stop($stop, $to));
+  // Safari 5.1+, Chrome 10+
+  background-image: -webkit-linear-gradient(left, $from 0%, $to $stop);
+  // Opera 11.10+
+  background-image: -o-linear-gradient(left, $from 0%, $to $stop);
+  // IE10+
+  background: -ms-linear-gradient(left, $from 0%, $to $stop);
+  // Standard
+  background: linear-gradient(to right, $from 0%, $to $stop);
+  // IE6-9
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$from', endColorstr='$to', GradientType=1);
+}
+
+// placeholder
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+ 
+// svg icons
+@function icon($icon-name,
+  $color,
+  $color2: ""
+  ) {
+  $icons: ( //SVG 아이콘 목록
+    // 이메일
+    email: "%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.5 3.25c.483 0 .875.392.875.875v15.75a.875.875 0 0 1-.875.875h-21a.875.875 0 0 1-.875-.875V4.125c0-.483.392-.875.875-.875h21zm-.375 1.25H1.875v15h20.25v-15zm.237-1.032.776.814-10.572 10.08a.825.825 0 0 1-1.096.031l-.038-.033L.862 4.282l.776-.814L12 13.347l10.362-9.88z'/%3E%3C/svg%3E",
+    // 링크 화살표
+    link-arrow : "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16.338 8.055'%3E%3Cg transform='translate(0 0.354)'%3E%3Cpath d='M-31.131-91.876l3.674-3.674-3.674-3.674' transform='translate(43.088 99.224)' fill='none' stroke='%23#{$color}' stroke-miterlimit='10' stroke-width='1'/%3E%3Cline x1='15.72' transform='translate(0 3.674)' fill='none' stroke='%23#{$color}' stroke-miterlimit='10' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E",
+    // 링크 새창
+    link-window : "%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 10 10' preserveAspectRatio='XMinYMin meet'%3E%3Cg%3E%3Cpolygon fill='%23#{$color}' points='5.944,0 5.944,1.283 8.021,1.283 2.972,6.243 3.734,7.063 8.718,2.079 8.718,4.155 10,4.155 10,0 '/%3E%3Cpolygon fill='%23#{$color}' points='0,0 0,10 10,10 10,5.449 8.718,5.449 8.718,8.72 1.283,8.72 1.283,1.283 4.553,1.283 4.553,0 '/%3E%3C/g%3E%3C/svg%3E"
+  );
+  $icon: map-get($icons, $icon-name);
+  @return url("data:image/svg+xml,#{$icon}");
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Cheongdam Hospital - GLUCK</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.min.css">
+</head> 
+<body>
+
+<div class="wrapper">
+    <header class="header-global">
+        <div class="header-area">
+            <strong class="tit-logo"><a href="#" class="logo">GLUCK</a></strong>
+            <button type="button" class="btn-menu">Menu</button>
+            <div class="search">
+                <input type="text" placeholder="Search your hospital/clinic">
+                <button type="button" class="btn-srch">Search</button>
+            </div>
+        </div>
+    </header>
+    <nav class="gnb">
+        <div class="gnb-head">
+            <strong>My Account</strong>
+            <button type="button" class="lay-close">Close</button>
+        </div>
+        <div class="gnb-menu">
+            <div class="user">
+                <div class="thum-fit"><img src="../../assets/images/img_dummy.png" alt=""></div>
+                <strong class="name"><a href="#">Log in / Sign UP</a></strong>
+            </div>
+            <ul class="menu">
+                <li><a href="#" class="m1">Manage Personal Info</a></li>
+                <li><a href="#" class="m2">Likes</a></li>
+                <li><a href="#" class="m3">Comments / Reviews</a></li>
+                <li><a href="#" class="m4">Bookings</a></li>
+                <li><a href="#" class="m5">Enquires</a></li>
+                <li><a href="#" class="m6">Reward Points</a></li>
+            </ul>
+            <div class="aside">
+                <a href="#" class="logout">Log Out</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="contents main">
+            <h1 class="hidden">Main</h1>
+            <p class="main-intro">Finding restaurants, cafes and activities<br> around your hospital/clinic in Gangnam</p>
+            <div class="swiper-container main-visual">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../../assets/images/img_dummy.png" alt="">
+                            <div class="copy">
+                                <p class="tit">병원 정보 플랫폼<br> <b>GLUCK 정식 오픈</b></p>
+                                <p class="txt">지금바로 가입하고 오픈 혜택받기!</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../../assets/images/img_dummy.png" alt="">
+                            <div class="copy">
+                                <p class="tit">병원 정보 플랫폼<br> <b>GLUCK 정식 오픈</b></p>
+                                <p class="txt">지금바로 가입하고 오픈 혜택받기!</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../../assets/images/img_dummy.png" alt="">
+                            <div class="copy">
+                                <p class="tit">병원 정보 플랫폼<br> <b>GLUCK 정식 오픈</b></p>
+                                <p class="txt">지금바로 가입하고 오픈 혜택받기!</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <ul class="main-link">
+                <li><a href="#">Hospitals<br>Clinics</a></li>
+                <li><a href="#">Interpreter</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Shopping<br>Activities</a></li>
+                <li><a href="#">One-day class</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer class="footer">
+        <ul class="footer-link">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">GLUCK Partners</a></li>
+        </ul>
+        <div class="footer-info">
+            <p class="ft-help">
+                Do you need a help?<br>
+                <b>m@m.com</b>
+            </p>
+            <div class="ft-sns">
+                <a href="#" class="sns inst">Instagram</a>
+                <a href="#" class="sns yout">Youtube</a>
+            </div>
+            <p class="addr">
+                GLUCK | 대표 : 홍길동 | 개인정보책임관리자 : 홍길동<br>
+                사업자등록번호 : 000-00-0000<br>
+                통신판매업 신고번호 : 2022-서울강서-1111<br>
+                주소 : 강서구 등촌동 000-00<br>
+                Tel : 02 - 123 - 4567 | Mail : gluck@naver.com
+            </p>
+        </div>
+        <p class="copyright">ⓒ 2022 GLUCK ALL RIGHT RESERVED</p>
+    </footer>
+</div>
+<div id="modal-wrapper"></div>
+
+<script type="text/javascript" src="../../assets/js/libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../assets/js/libs/swiper-8.4.2.min.js"></script>
+<script type="text/javascript" src="../../assets/js/common.js"></script>
+<script type="text/javascript">
+    var swiper = new Swiper(".main-visual", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      }
+    });
+  </script>
+</body>
+</html>

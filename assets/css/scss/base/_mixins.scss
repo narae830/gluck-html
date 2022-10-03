@@ -44,7 +44,7 @@
 
 // 웹키트 탭 하이라이트 컬러
 @mixin tap-highlight {
-    -webkit-tap-highlight-color: rgba(238, 186, 186, 0.2);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, .1);
   }
 
 // 그라디언트 생성
@@ -91,17 +91,18 @@
 }
  
 // svg icons
-@function icon($icon-name,
-  $color,
-  $color2: ""
-  ) {
+@function svg($icon-name, $color, $color2: "") {
   $icons: ( //SVG 아이콘 목록
-    // 이메일
-    email: "%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.5 3.25c.483 0 .875.392.875.875v15.75a.875.875 0 0 1-.875.875h-21a.875.875 0 0 1-.875-.875V4.125c0-.483.392-.875.875-.875h21zm-.375 1.25H1.875v15h20.25v-15zm.237-1.032.776.814-10.572 10.08a.825.825 0 0 1-1.096.031l-.038-.033L.862 4.282l.776-.814L12 13.347l10.362-9.88z'/%3E%3C/svg%3E",
-    // 링크 화살표
-    link-arrow : "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16.338 8.055'%3E%3Cg transform='translate(0 0.354)'%3E%3Cpath d='M-31.131-91.876l3.674-3.674-3.674-3.674' transform='translate(43.088 99.224)' fill='none' stroke='%23#{$color}' stroke-miterlimit='10' stroke-width='1'/%3E%3Cline x1='15.72' transform='translate(0 3.674)' fill='none' stroke='%23#{$color}' stroke-miterlimit='10' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E",
-    // 링크 새창
-    link-window : "%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 10 10' preserveAspectRatio='XMinYMin meet'%3E%3Cg%3E%3Cpolygon fill='%23#{$color}' points='5.944,0 5.944,1.283 8.021,1.283 2.972,6.243 3.734,7.063 8.718,2.079 8.718,4.155 10,4.155 10,0 '/%3E%3Cpolygon fill='%23#{$color}' points='0,0 0,10 10,10 10,5.449 8.718,5.449 8.718,8.72 1.283,8.72 1.283,1.283 4.553,1.283 4.553,0 '/%3E%3C/g%3E%3C/svg%3E"
+    // 이전 버튼
+    btn-back : "%0A%3Csvg width='12' height='20' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.4741 0L12 1.45688L3.0519 10L12 18.5431L10.4741 20L0 10L10.4741 0Z' fill='%23#{$color}'/%3E%3C/svg%3E%0A",
+    // 닫기 버튼
+    btn-close : "%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L19 19' stroke='%23#{$color}'/%3E%3Cpath d='M19 1L0.999999 19' stroke='%23#{$color}'/%3E%3C/svg%3E%0A",
+    // 삭제 버튼
+    btn-delete : "%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.26683 9.66683L0.333496 8.7335L4.06683 5.00016L0.333496 1.26683L1.26683 0.333496L5.00016 4.06683L8.7335 0.333496L9.66683 1.26683L5.9335 5.00016L9.66683 8.7335L8.7335 9.66683L5.00016 5.9335L1.26683 9.66683Z' fill='%23#{$color}'/%3E%3C/svg%3E%0A",
+    // 좋아요 아이콘
+    ico-like : "%0A%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.6702 2.05811L14.6705 2.05863C15.207 2.80534 15.5 3.75148 15.5 4.80562C15.5 6.26925 14.6737 7.96254 12.8836 9.84548C11.4304 11.374 9.70367 12.6334 8.79955 13.2508C8.55818 13.4148 8.2808 13.5 8 13.5C7.71915 13.5 7.44173 13.4147 7.20034 13.2507C6.29574 12.6335 4.56974 11.3741 3.11649 9.84556C1.32624 7.96173 0.5 6.26921 0.5 4.80562C0.5 3.75148 0.792985 2.80534 1.32945 2.05863L1.32983 2.05811C1.83859 1.34804 2.55285 0.846063 3.35389 0.62545C4.15438 0.404988 5.00144 0.476334 5.76105 0.829791L5.76105 0.829804L5.76458 0.831414C6.44722 1.14263 7.07312 1.67812 7.59106 2.41435L7.9995 2.99493L8.40861 2.41482C8.9266 1.68032 9.55286 1.14431 10.2364 0.830983L10.2364 0.83099L10.2389 0.829791C10.9986 0.476334 11.8456 0.404988 12.6461 0.62545C13.4471 0.846063 14.1614 1.34804 14.6702 2.05811Z' fill='%23#{$color}' stroke='%23#{$color2}'/%3E%3C/svg%3E%0A",
+    // 평점 아이콘
+    ico-star : "%0A%3Csvg width='39' height='38' viewBox='0 0 39 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.5 1.61804L23.627 14.3197L23.7393 14.6652H24.1025H37.4578L26.6532 22.5152L26.3593 22.7287L26.4715 23.0742L30.5985 35.7758L19.7939 27.9258L19.5 27.7123L19.2061 27.9258L8.40146 35.7758L12.5285 23.0742L12.6407 22.7287L12.3468 22.5152L1.54218 14.6652H14.8975H15.2607L15.373 14.3197L19.5 1.61804Z' fill='%23#{$color}' stroke='%23#{$color2}'/%3E%3C/svg%3E%0A",
   );
   $icon: map-get($icons, $icon-name);
   @return url("data:image/svg+xml,#{$icon}");

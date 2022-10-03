@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Sign Up with Email - GLUCK</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.min.css">
+</head> 
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="header-title">
+            <h1 class="tit-h1">Sign Up with Email</h1>
+            <button type="button" class="btn-back">Previous</button>
+        </div>
+    </header>
+    <div class="container">
+        <section class="contents">
+            <p class="signup-desc">Please fill required fields!</p>
+            <ul class="info-form">
+                <li class="frm-con">
+                    <label for="INP01" class="frm-label">ID <em title="Required">*</em></label>
+                    <input type="text" id="INP01" class="frm-text" placeholder="ID">
+                </li>
+                <li class="frm-con">
+                    <label for="INP02" class="frm-label">Password <em title="Required">*</em></label>
+                    <input type="password" id="INP02" class="frm-text" placeholder="Create a Password">
+                    <p class="msg-guide">Password must be 8~16 characters with at least 1numder 1letter and 1 special symbol</p>
+                </li>
+                <li class="frm-con">
+                    <label for="INP03" class="frm-label">Re-enter password</label>
+                    <input type="password" id="INP03" class="frm-text" placeholder="Re-enter password">
+                </li>
+                <li class="frm-con">
+                    <label for="INP04" class="frm-label">Email <em title="Required">*</em></label>
+                    <input type="text" id="INP04" class="frm-text" placeholder="Email address">
+                </li>
+                <li class="frm-con">
+                    <label for="INP05" class="frm-label">Nickname <em title="Required">*</em></label>
+                    <input type="text" id="INP05" class="frm-text" placeholder="Write a nickname">
+                </li>
+            </ul>
+            <div class="agree-form">
+                <div class="check-all">
+                    <span class="frm-check"><input type="checkbox" id="AGRALL" name="AGRALL"><label for="AGRALL">I agree to the Terms of Service</label></span>
+                </div>
+                <ul class="check-list">
+                    <li><span class="frm-check"><input type="checkbox" id="AGR01"><label for="AGR01">(Required) Over the age of 14</label></span></li>
+                    <li><span class="frm-check"><input type="checkbox" id="AGR02"><label for="AGR02">(Required) I agree to the Terms of Service</label></span></li>
+                </ul>
+            </div>
+            <div class="btn-stiky">
+                <div class="btn-area">
+                    <button type="button" class="btn-base btn-l action">Sign Up with Email</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../assets/js/libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../assets/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Bookings - GLUCK</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.min.css">
+</head> 
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="header-title">
+            <h1 class="tit-h1">Bookings</h1>
+            <button type="button" class="btn-back">Previous</button>
+        </div>
+    </header>
+    <div class="container">
+        <nav class="tab-type1 tab-fixed">
+            <ul class="tab-list">
+                <li><a href="./bookings-tab-01.html" role="button" class="tab">One Day Class</a></li>
+                <li class="on"><a href="./bookings-tab-02.html" role="button" class="tab">Interpreter</a></li>
+            </ul>
+        </nav>
+        <section class="contents service">
+            <ul class="list-booking">
+                <li>
+                    <a href="#" class="booking-box">
+                        <div class="smmry">
+                            <div class="thum-fit"><img src="../../assets/images/img_dummy.png" alt=""></div>
+                            <div class="srvc-con">
+                                <strong class="name">Cheongdam Hospital Cheongdam Hospital</strong>
+                                <p class="price">￦ 10,000</p>
+                            </div>
+                            <p class="txt-desc">This is the product description. This is the product description. This is the product description.</p>
+                        </div>
+                        <dl class="info">
+                            <dt>Booking No</dt>
+                            <dd>22010112345</dd>
+                            <dt>Payment Date</dt>
+                            <dd>2022. 01. 01. 10:00 am (Local Time)</dd>
+                            <dt>Payment Amount</dt>
+                            <dd>KRW 20,000</dd>
+                            <dt>Participation date</dt>
+                            <dd>2022. 01. 01. 11:00 am (Local Time)</dd>
+                        </dl>
+                    </a>
+                    <div class="btn-area btn-grid">
+                        <button type="button" class="btn-base btn-r pstv">Change Booking</button>
+                        <button type="button" class="btn-base btn-r ngtv">Cancel Booking</button>
+                        <button type="button" onclick="javascript:modalShow('../service/modal-enquires.html');" class="btn-base btn-r action">Enquires</button>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="booking-box">
+                        <div class="smmry">
+                            <div class="thum-fit"><img src="../../assets/images/img_dummy.png" alt=""></div>
+                            <div class="srvc-con">
+                                <strong class="name">Cheongdam Hospital Cheongdam Hospital</strong>
+                                <p class="price">￦ 10,000</p>
+                            </div>
+                            <p class="txt-desc">This is the product description. This is the product description. This is the product description.</p>
+                        </div>
+                        <dl class="info">
+                            <dt>Booking No</dt>
+                            <dd>22010112345</dd>
+                            <dt>Payment Date</dt>
+                            <dd>2022. 01. 01. 10:00 am (Local Time)</dd>
+                            <dt>Payment Amount</dt>
+                            <dd>KRW 20,000</dd>
+                            <dt>Participation date</dt>
+                            <dd>2022. 01. 01. 11:00 am (Local Time)</dd>
+                        </dl>
+                    </a>
+                    <div class="btn-area btn-grid">
+                        <button type="button" class="btn-base btn-r pstv">Change Booking</button>
+                        <button type="button" class="btn-base btn-r ngtv">Cancel Booking</button>
+                        <button type="button" onclick="javascript:modalShow('../service/modal-enquires.html');" class="btn-base btn-r action">Enquires</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+<div id="modal-wrapper"></div>
+
+
+<script type="text/javascript" src="../../assets/js/libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../assets/js/common.js"></script>
+</body>
+</html>

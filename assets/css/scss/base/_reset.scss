@@ -26,7 +26,7 @@ header,footer,section,article,nav,aside{display:block}
 table{width:100%;border-collapse:collapse;empty-cells:show;border-spacing:0}
 td,th{position:relative;font-weight:$font-weight;margin:0;padding:0;word-break:break-all}
 h1,h2,h3,h4,h5,h6{color:$color-headline;font-weight:$font-weight-headline;line-height:$line-height-headline}
-img{max-width:100%;border:0;vertical-align:top}
+img{max-width:100%;max-height:100%;border:0;vertical-align:top}
 fieldset,iframe{border:0;vertical-align:top}
 textarea{resize:none}
 ul,ol{list-style:none}
@@ -44,7 +44,7 @@ button{font-family:inherit;appearance:none;border:0;border-radius:0;background:n
 button:disabled,
 button[disabled]{-webkit-tap-highlight-color:transparent}
 a{text-decoration:none;color:inherit}
-a:hover{color:inherit;text-decoration:underline;text-underline-position:under}
+a:hover{color:inherit}
 a,button{@include tap-highlight}
 a,area,button,[role="button"],input:not([type="range"]),label,select,summary,textarea{-ms-touch-action:manipulation;touch-action:manipulation}
 input,textarea,select{color:inherit;font-family:inherit;font-size:1em;appearance:none;border:0;border-radius:0;background:0;box-shadow:none;outline:0}

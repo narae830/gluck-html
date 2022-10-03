@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Cheongdam Hospital - GLUCK</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.min.css">
+</head> 
+<body>
+
+<div class="wrapper">
+    <header class="header-global">
+        <div class="header-area">
+            <strong class="tit-logo"><a href="#" class="logo">GLUCK</a></strong>
+            <button type="button" class="btn-menu">Menu</button>
+            <div class="search">
+                <input type="text" placeholder="Search your hospital/clinic">
+                <button type="button" class="btn-srch">Search</button>
+            </div>
+        </div>
+    </header>
+    <header class="header">
+        <div class="header-title">
+            <h1 class="tit-h1">Cheongdam Hospital</h1>
+            <button type="button" class="btn-back">Previous</button>
+        </div>
+    </header>
+    <div class="container">
+        <section class="contents service">
+            <div class="service-intro">
+                <strong class="name">Cheongdam Hospital</strong>
+                <button type="button" class="btn-like">Like</button>
+                <p class="desc">청담병원</p>
+                <div class="count">
+                    <span class="views">9,999</span>
+                    <span class="likes">9,999</span>
+                    <span class="reply">9,999</span>
+                </div>
+            </div>
+            <div class="service-contact">
+                <div class="address">
+                    <h2 class="tit-h2">Address</h2>
+                    <p class="addr">21, Dosan-daero 75-gil, Gangnam-gu, Seoul, Republic of Korea</p>
+                    <p class="addr">서울시 강남구 청담동 75-21</p>
+                    <span class="side-filter"><input type="checkbox" id="WR"><label for="WR" class="ca">Finding a way</label></span>
+                    <div class="map-api">
+                        지도 API
+                    </div>
+                </div>
+            </div>
+            <div class="service-other">
+                <h3 class="tit-dth">Please select the surrounding category.</h3>
+                <div class="frm-category">
+                    <ul class="ca-list">
+                        <li><input type="radio" id="CA01" name="CA"><label for="CA01" class="ca">Food</label></li>
+                        <li><input type="radio" id="CA02" name="CA"><label for="CA02" class="ca">Shopping</label></li>
+                        <li><input type="radio" id="CA03" name="CA"><label for="CA03" class="ca">Activities</label></li>
+                        <li><input type="radio" id="CA04" name="CA"><label for="CA04" class="ca">Tours</label></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<div id="modal-wrapper"></div>
+
+<script type="text/javascript" src="../../assets/js/libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../assets/js/libs/swiper-8.4.2.min.js"></script>
+<script type="text/javascript" src="../../assets/js/common.js"></script>
+</html>

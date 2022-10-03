@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Delete Account - GLUCK</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.min.css">
+</head> 
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="header-title">
+            <h1 class="tit-h1">Delete Account</h1>
+            <button type="button" class="btn-back">Previous</button>
+        </div>
+    </header>
+    <div class="container">
+        <section class="contents">
+            <ul class="info-form">
+                <li class="frm-con">
+                    <label for="INP01" class="frm-label">ID</label>
+                    <input type="text" id="INP01" class="frm-text" placeholder="ID" value="idenit" disabled>
+                </li>
+                <li class="frm-con">
+                    <label for="INP02" class="frm-label">New Password <em title="Required">*</em></label>
+                    <input type="password" id="INP02" class="frm-text">
+                    <p class="msg-guide">Password must be 8~16 characters with at least 1numder 1letter and 1 special symbol</p>
+                </li>
+                <li class="frm-con">
+                    <label for="INP03" class="frm-label">Re-enter password</label>
+                    <input type="password" id="INP03" class="frm-text" placeholder="Re-enter password">
+                </li>
+                <li class="frm-con">
+                    <label for="INP04" class="frm-label">New  Re-enter password <em title="Required">*</em></label>
+                    <input type="text" id="INP04" class="frm-text" placeholder="Email address">
+                </li>
+                <li class="frm-con">
+                    <label for="INP05" class="frm-label">Nickname <em title="Required">*</em></label>
+                    <input type="text" id="INP05" class="frm-text">
+                </li>
+                <li class="frm-con">
+                    <label for="INP06" class="frm-label">First Name (as an passport)</label>
+                    <input type="text" id="INP06" class="frm-text">
+                </li>
+                <li class="frm-con">
+                    <label for="INP07" class="frm-label">Last Name (as an passport)</label>
+                    <input type="text" id="INP07" class="frm-text">
+                </li>
+                <li class="frm-con">
+                    <label for="INP08" class="frm-label">Country (as an passport)</label>
+                    <input type="text" id="INP08" class="frm-text">
+                </li>
+                <li class="frm-con">
+                    <label for="INP09" class="frm-label">Title <em title="Required">*</em></label>
+                    <span class="frm-button">
+                        <span><input type="radio" id="RAD01" name="RAD" checked><label for="RAD01">Mr</label></span>
+                        <span><input type="radio" id="RAD02" name="RAD"><label for="RAD02">Ms</label></span>
+                    </span>
+                </li>
+            </ul>
+            <div class="btn-area">
+                <button type="button" class="btn-base btn-l action">Save</button>
+            </div>
+            <div class="link-area">
+                <a href="javascript:modalShow('./modal-leave-01.html');" class="txt-link">Delete account</a>
+            </div>
+        </section>
+    </div>
+</div>
+<div id="modal-wrapper"></div>
+
+
+<script type="text/javascript" src="../../assets/js/libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../assets/js/common.js"></script>
+</body>
+</html>

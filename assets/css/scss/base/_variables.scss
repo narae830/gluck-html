@@ -1,18 +1,23 @@
 // layout
 $min-width: 320px;
+$max-width: 640px;
 
 // default
 $font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', arial, sans-serif;
 $font-body: 14px;
 $font-weight: 400;
-$line-height: 1.5;
+$line-height: 1.4;
 $line-height-headline: 1.2;
 $letter-spacing: -.5px;
 
 $bg-body: false;
-$color-paragraph: #333;
+$color-paragraph: #424242;
 $color-headline: #212121;
 $color-placeholder: #BDBDBD;
+
+$color-line: #eee;
+$color-line-focus: #424242;
+$color-disabled: #E0E0E0;
 
 // color
 $color-white: #fff;

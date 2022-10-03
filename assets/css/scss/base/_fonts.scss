@@ -4,7 +4,7 @@ $path-fonts:"../fonts";
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 400;
-    font-display:swap;
+    font-display: swap;
     src: url(#{$path-fonts}/notokr-regular.eot) format('eot'),
          url(#{$path-fonts}/notokr-regular.woff2) format('woff2'),
 		 url(#{$path-fonts}/notokr-regular.woff) format('woff');
@@ -13,8 +13,35 @@ $path-fonts:"../fonts";
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 500;
-    font-display:swap;
+    font-display: swap;
     src: url(#{$path-fonts}/notokr-medium.eot) format('eot'),
          url(#{$path-fonts}/notokr-medium.woff2) format('woff2'),
          url(#{$path-fonts}/notokr-medium.woff) format('woff');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(#{$path-fonts}/notokr-bold.eot) format('eot'),
+         url(#{$path-fonts}/notokr-bold.woff2) format('woff2'),
+         url(#{$path-fonts}/notokr-bold.woff) format('woff');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(#{$path-fonts}/montserrat-medium.eot) format('eot'),
+         url(#{$path-fonts}/montserrat-medium.woff2) format('woff2'),
+         url(#{$path-fonts}/montserrat-medium.woff) format('woff');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(#{$path-fonts}/montserrat-semibold.eot) format('eot'),
+         url(#{$path-fonts}/montserrat-semibold.woff2) format('woff2'),
+         url(#{$path-fonts}/montserrat-semibold.woff) format('woff');
 }

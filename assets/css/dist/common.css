@@ -1264,8 +1264,9 @@ header .btn-menu:before {
   z-index: 2001;
 }
 .gnb-head {
-  position: fixed;
+  position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
   min-width: 320px;
   height: 56px;
@@ -2055,6 +2056,7 @@ header .btn-menu:before {
 
 .main-visual {
   border-radius: 10px;
+  overflow: hidden;
 }
 .main-visual .swiper-slide .copy {
   margin-left: -100%;

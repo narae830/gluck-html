@@ -1540,13 +1540,9 @@ header {
     }
 }
 .service-contact {
-    padding-top: 20px;
-    border-top: 1px solid #C8C8C8;
-    &:first-child {
-        padding-top: 0;
-        border-top: 0;
-    }
     .contact {
+        padding: 20px 0;
+        border-top: 1px solid #C8C8C8;
         font-family: 'Montserrat';
         &>li+li {
             margin-top: 10px;
@@ -1571,7 +1567,6 @@ header {
     }
     .address {
         position: relative;
-        margin-top: 20px;
         padding-top: 24px;
         border-top: 1px solid #C8C8C8;
         .side-filter {
@@ -1601,6 +1596,12 @@ header {
                 font-size: 18px;
                 font-weight: 500;
             }
+        }
+    }
+    &:first-child {
+        .contact {
+            border-top:0;
+            padding-top:0;
         }
     }
 }

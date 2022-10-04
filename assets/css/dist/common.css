@@ -1787,15 +1787,9 @@ header .btn-menu:before {
   font-size: 14px;
 }
 
-.service-contact {
-  padding-top: 20px;
-  border-top: 1px solid #C8C8C8;
-}
-.service-contact:first-child {
-  padding-top: 0;
-  border-top: 0;
-}
 .service-contact .contact {
+  padding: 20px 0;
+  border-top: 1px solid #C8C8C8;
   font-family: "Montserrat";
 }
 .service-contact .contact > li + li {
@@ -1820,7 +1814,6 @@ header .btn-menu:before {
 }
 .service-contact .address {
   position: relative;
-  margin-top: 20px;
   padding-top: 24px;
   border-top: 1px solid #C8C8C8;
 }
@@ -1849,6 +1842,10 @@ header .btn-menu:before {
 .service-contact .profile .user .name {
   font-size: 18px;
   font-weight: 500;
+}
+.service-contact:first-child .contact {
+  border-top: 0;
+  padding-top: 0;
 }
 
 .service-other {

@@ -981,6 +981,7 @@ input::-ms-clear {
 .swiper-container {
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
 .swiper-wrapper {
@@ -2056,7 +2057,6 @@ header .btn-menu:before {
 
 .main-visual {
   border-radius: 10px;
-  overflow: hidden;
 }
 .main-visual .swiper-slide .copy {
   margin-left: -100%;

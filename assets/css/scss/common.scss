@@ -742,6 +742,7 @@
 .swiper-container {
     position: relative;
     overflow: hidden;
+    z-index: 0;
 }
 .swiper-wrapper {
     position: relative;
@@ -1812,7 +1813,6 @@ header {
 }
 .main-visual {
     border-radius: 10px;
-    overflow: hidden;
     .swiper-slide {
         .copy {
             margin-left: -100%;

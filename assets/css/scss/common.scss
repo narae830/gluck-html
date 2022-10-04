@@ -420,6 +420,33 @@
         background-image: svg(ico-like, 3EB6ED, 3EB6ED);
     }
 }
+.frm-search {
+    position: relative;
+    text-align: center;
+    input {
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        line-height: 38px;
+        border: 1px solid $color-black;
+        border-radius: 20px;
+    }
+    .btn-srch {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url(#{$path-image}/ico_search.png) 50% 50% no-repeat;
+            background-size: 100% auto;
+        }
+    }
+}
 
 /* tab */
 .tab-cont {
@@ -983,39 +1010,15 @@ header {
                 background-size: 100% auto;
             }
         }
-        .search {
-            position: relative;
-            text-align: center;
-            input {
-                width: 100%;
-                height: 40px;
-                padding: 0 10px;
-                line-height: 38px;
-                border: 1px solid $color-black;
-                border-radius: 20px;
-            }
-            .btn-srch {
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 40px;
-                height: 40px;
-                &:before {
-                    content: '';
-                    display: inline-block;
-                    width: 24px;
-                    height: 24px;
-                    background: url(#{$path-image}/ico_search.png) 50% 50% no-repeat;
-                    background-size: 100% auto;
-                }
-            }
-        }
     }
     &~.header {
         .header-title {
             top: 116px;
         }
     }
+}
+.gnb {
+    display: none;
 }
 
 .container {
@@ -1610,3 +1613,5 @@ header {
     margin-top: 24px;
     border-top: 1px solid #c8c8c8;
 }
+
+/* main */

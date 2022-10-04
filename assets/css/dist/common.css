@@ -658,6 +658,34 @@ input::-ms-clear {
   background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.6702 2.05811L14.6705 2.05863C15.207 2.80534 15.5 3.75148 15.5 4.80562C15.5 6.26925 14.6737 7.96254 12.8836 9.84548C11.4304 11.374 9.70367 12.6334 8.79955 13.2508C8.55818 13.4148 8.2808 13.5 8 13.5C7.71915 13.5 7.44173 13.4147 7.20034 13.2507C6.29574 12.6335 4.56974 11.3741 3.11649 9.84556C1.32624 7.96173 0.5 6.26921 0.5 4.80562C0.5 3.75148 0.792985 2.80534 1.32945 2.05863L1.32983 2.05811C1.83859 1.34804 2.55285 0.846063 3.35389 0.62545C4.15438 0.404988 5.00144 0.476334 5.76105 0.829791L5.76105 0.829804L5.76458 0.831414C6.44722 1.14263 7.07312 1.67812 7.59106 2.41435L7.9995 2.99493L8.40861 2.41482C8.9266 1.68032 9.55286 1.14431 10.2364 0.830983L10.2364 0.83099L10.2389 0.829791C10.9986 0.476334 11.8456 0.404988 12.6461 0.62545C13.4471 0.846063 14.1614 1.34804 14.6702 2.05811Z' fill='%233EB6ED' stroke='%233EB6ED'/%3E%3C/svg%3E%0A");
 }
 
+.frm-search {
+  position: relative;
+  text-align: center;
+}
+.frm-search input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  line-height: 38px;
+  border: 1px solid #212121;
+  border-radius: 20px;
+}
+.frm-search .btn-srch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+}
+.frm-search .btn-srch:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../images/ico_search.png) 50% 50% no-repeat;
+  background-size: 100% auto;
+}
+
 /* tab */
 .tab-cont {
   display: none;
@@ -1222,35 +1250,12 @@ header .btn-menu:before {
   background: url(../images/logo.png) 50% 50% no-repeat;
   background-size: 100% auto;
 }
-.header-global .header-area .search {
-  position: relative;
-  text-align: center;
-}
-.header-global .header-area .search input {
-  width: 100%;
-  height: 40px;
-  padding: 0 10px;
-  line-height: 38px;
-  border: 1px solid #212121;
-  border-radius: 20px;
-}
-.header-global .header-area .search .btn-srch {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
-}
-.header-global .header-area .search .btn-srch:before {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background: url(../images/ico_search.png) 50% 50% no-repeat;
-  background-size: 100% auto;
-}
 .header-global ~ .header .header-title {
   top: 116px;
+}
+
+.gnb {
+  display: none;
 }
 
 .container {
@@ -1852,4 +1857,6 @@ header .btn-menu:before {
   position: relative;
   margin-top: 24px;
   border-top: 1px solid #c8c8c8;
-}/*# sourceMappingURL=common.css.map */
+}
+
+/* main *//*# sourceMappingURL=common.css.map */

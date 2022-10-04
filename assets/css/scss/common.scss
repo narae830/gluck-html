@@ -1027,8 +1027,9 @@ header {
     background: #fff;
     z-index: $z-nav;
     &-head {
-        position: fixed;
+        position: absolute;
         top: 0;
+        left: 0;
         width: 100%;
         min-width: $min-width;
         height: 56px;
@@ -1811,6 +1812,7 @@ header {
 }
 .main-visual {
     border-radius: 10px;
+    overflow: hidden;
     .swiper-slide {
         .copy {
             margin-left: -100%;

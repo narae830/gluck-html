@@ -50,7 +50,6 @@ body {
   word-break: keep-all;
   word-wrap: break-word;
   -webkit-font-smoothing: antialiased;
-  overflow: overlay;
 }
 
 body, div, p, header, section, nav, footer, article, figure, aside, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, form, fieldset, input, textarea, button, select, span, strong, b, em, a, label {
@@ -1012,22 +1011,6 @@ input::-ms-clear {
      object-fit: cover;
 }
 
-.swiper-pagination {
-  position: absolute;
-  bottom: 16px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0 15px;
-  color: #bbb;
-  font-size: 12px;
-  line-height: 24px;
-  border-radius: 12px;
-  background: rgba(0, 0, 0, 0.5);
-}
-.swiper-pagination .swiper-pagination-current {
-  color: #fff;
-}
-
 /* modal */
 .dimmed {
   position: fixed;
@@ -1146,6 +1129,22 @@ input::-ms-clear {
   background-size: 100% auto;
 }
 
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 9px;
+  font-size: 0;
+}
+.btn-close:before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L19 19' stroke='%23212121'/%3E%3Cpath d='M19 1L0.999999 19' stroke='%23212121'/%3E%3C/svg%3E%0A") no-repeat;
+  background-size: 100% auto;
+}
+
 /* layout */
 .wrapper {
   min-width: 320px;
@@ -1215,7 +1214,7 @@ header .btn-menu:before {
 .header .header-title .tit-h1 {
   margin: 0 56px;
   font-size: 16px;
-  line-height: 56px;
+  line-height: 55px;
   text-align: center;
 }
 
@@ -1255,6 +1254,99 @@ header .btn-menu:before {
 
 .gnb {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 56px;
+  background: #fff;
+  z-index: 2001;
+}
+.gnb-head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-width: 320px;
+  height: 56px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+.gnb-head .tit {
+  display: block;
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: center;
+}
+.gnb-menu {
+  height: 100%;
+  padding: 32px 24px;
+  overflow-y: auto;
+}
+.gnb-menu .user-info {
+  display: flex;
+  align-items: center;
+}
+.gnb-menu .user-info .thum-fit {
+  width: 64px;
+  height: 64px;
+  margin-right: 16px;
+  border-radius: 100%;
+  background: url(../images/bg_user.png) 50% 50% no-repeat;
+  background-size: 100% auto;
+}
+.gnb-menu .user-info .name {
+  color: #212121;
+  font-size: 18px;
+  font-weight: 500;
+}
+.gnb-menu .menu {
+  margin-top: 40px;
+}
+.gnb-menu .menu > li a {
+  display: block;
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 50px;
+}
+.gnb-menu .menu > li a:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: -2px 14px 0 0;
+  vertical-align: middle;
+  background: url(../images/ico_gnb.png) 50% -2px no-repeat;
+  background-size: 20px auto;
+}
+.gnb-menu .menu > li .m1:before {
+  background-position: 50% -39px;
+}
+.gnb-menu .menu > li .m2:before {
+  background-position: 50% -2px;
+}
+.gnb-menu .menu > li .m3:before {
+  background-position: 50% -20px;
+}
+.gnb-menu .menu > li .m4:before {
+  background-position: 50% -59px;
+}
+.gnb-menu .menu > li .m5:before {
+  background-position: 50% -79px;
+}
+.gnb-menu .menu > li .m6:before {
+  background-position: 50% -97px;
+}
+.gnb-menu .aside {
+  margin-top: 16px;
+  padding-top: 26px;
+  border-top: 1px solid #eee;
+}
+.gnb-menu .aside .logout {
+  color: #757575;
 }
 
 .container {
@@ -1267,7 +1359,8 @@ header .btn-menu:before {
   padding: 40px 16px;
 }
 .contents.main {
-  padding: 0 20px 30px;
+  padding: 0 16px 30px;
+  max-width: 100%;
 }
 .contents.service {
   padding: 20px 16px;
@@ -1275,6 +1368,10 @@ header .btn-menu:before {
 }
 .contents.service .tit-h2 {
   font-family: "Montserrat";
+}
+.contents.terms {
+  padding: 30px 16px 40px;
+  max-width: 100%;
 }
 .contents .border-box {
   margin: 20px -16px 0;
@@ -1287,6 +1384,59 @@ header .btn-menu:before {
 
 .footer {
   position: relative;
+  border-top: 1px solid #DBDBDB;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid #E8E8E8;
+}
+.footer-link > li {
+  flex: 1 0 auto;
+  color: #676767;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+}
+.footer-info {
+  padding: 22px 40px;
+  border-bottom: 1px solid #E8E8E8;
+}
+.footer-info .ft-help {
+  color: #212121;
+  line-height: 1.7;
+}
+.footer-info .ft-sns {
+  margin-top: 20px;
+}
+.footer-info .ft-sns .sns {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 25px;
+  font-size: 0;
+  vertical-align: top;
+  background: url(../images/ico_sns.png) 50% -5px no-repeat;
+  background-size: 40px auto;
+}
+.footer-info .ft-sns .sns.insta {
+  background-position: 50% -5px;
+}
+.footer-info .ft-sns .sns.yout {
+  background-position: 50% -45px;
+}
+.footer-info .ft-addr {
+  margin-top: 25px;
+  color: #757575;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.footer .copyright {
+  padding: 15px 16px;
+  color: #9E9E9E;
+  font-size: 10px;
+  text-align: center;
 }
 
 /* login */
@@ -1592,6 +1742,27 @@ header .btn-menu:before {
   margin-top: 10px;
 }
 
+.list-photo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 4px;
+}
+.list-photo > li {
+  flex: 0 1 calc(33.3% - 3px);
+}
+.list-photo > li .thum-fit {
+  position: relative;
+  padding-bottom: 76%;
+}
+.list-photo > li .thum-fit img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.layer-default .list-photo {
+  margin: 0 -24px;
+}
+
 .reply-box {
   display: flex;
   align-items: flex-start;
@@ -1755,6 +1926,22 @@ header .btn-menu:before {
 .service-visual img {
   width: 100%;
 }
+.service-visual .swiper-pagination {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 15px;
+  color: #bbb;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.service-visual .swiper-pagination .swiper-pagination-current {
+  color: #fff;
+}
 
 .service-intro {
   position: relative;
@@ -1841,7 +2028,7 @@ header .btn-menu:before {
   width: 48px;
   height: 48px;
   margin-right: 16px;
-  border-radius: 24px;
+  border-radius: 100%;
   background: url(../images/bg_user.png) 50% 50% no-repeat;
   background-size: 100% auto;
 }
@@ -1860,4 +2047,103 @@ header .btn-menu:before {
   border-top: 1px solid #c8c8c8;
 }
 
-/* main *//*# sourceMappingURL=common.css.map */
+/* main */
+.main-intro {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.main-visual {
+  border-radius: 10px;
+}
+.main-visual .swiper-slide .copy {
+  margin-left: -100%;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.main-visual .swiper-slide .copy .tit {
+  font-size: 20px;
+}
+.main-visual .swiper-slide .copy .txt {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.main-visual .swiper-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 12px;
+  padding: 0 5px;
+  text-align: center;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.main-visual .swiper-pagination {
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+  line-height: 26px;
+}
+.main-visual .swiper-button-prev,
+.main-visual .swiper-button-next {
+  display: inline-block;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 11px;
+}
+.main-visual .swiper-button-prev {
+  display: inline-block;
+}
+.main-visual .swiper-button-prev:before {
+  content: "( ";
+}
+.main-visual .swiper-button-next {
+  display: inline-block;
+}
+.main-visual .swiper-button-next:before {
+  content: " )";
+}
+
+.main-link {
+  margin: 35px -16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px 0;
+}
+.main-link > li {
+  flex-basis: 33%;
+}
+.main-link > li:nth-child(-n+2) {
+  flex-basis: 34%;
+}
+.main-link [class^=svc-] {
+  display: block;
+  height: 100%;
+  line-height: 1.2;
+  text-align: center;
+}
+.main-link [class^=svc-]:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background: url(../images/ico_main.png) 50% -18px no-repeat;
+  background-size: 96px auto;
+}
+.main-link .svc-h:before {
+  background-position: 50% -18px;
+}
+.main-link .svc-i:before {
+  background-position: 50% -114px;
+}
+.main-link .svc-f:before {
+  background-position: 50% -210px;
+}
+.main-link .svc-s:before {
+  background-position: 50% -306px;
+}
+.main-link .svc-o:before {
+  background-position: 50% -402px;
+}/*# sourceMappingURL=common.css.map */

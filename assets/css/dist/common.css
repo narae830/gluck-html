@@ -451,6 +451,13 @@ input::-ms-clear {
 .frm-category .ca-list > li > ul {
   display: none;
 }
+.frm-category .ca-list > li input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .frm-category .ca-list > li input + .ca {
   display: inline-block;
   min-width: 65px;
@@ -838,6 +845,7 @@ input::-ms-clear {
   display: inline-block;
   width: auto;
   padding: 0 15px;
+  font-size: 12px;
   line-height: 24px;
   border-radius: 10px;
 }

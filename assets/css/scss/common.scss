@@ -217,6 +217,13 @@
             &>ul {
                 display: none;
             }
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
             input + .ca {
                 display: inline-block;
                 min-width: 65px;
@@ -604,7 +611,8 @@
     display: inline-block;
     width: auto;
     padding: 0 15px;
-    line-height:24px;
+    font-size: 12px;
+    line-height: 24px;
     border-radius: 10px;
 }
 .btn-r {

@@ -16,7 +16,7 @@ function setTabScroll() {
     $('.tab-type1').each(function(){
         var $this = $(this);
         var tabList = $this.children('.tab-list');
-        var moveScroll = tabList.children('li').position().left - tabList.css('padding-left').replace(/[^-\d\.]/g, '');
+        var moveScroll = tabList.children('li.on').position().left - tabList.css('padding-left').replace(/[^-\d\.]/g, '');
         tabList.scrollLeft(moveScroll)
     })
 }

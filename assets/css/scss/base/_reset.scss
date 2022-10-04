@@ -40,7 +40,7 @@ strong, b{font-weight:$font-weight-bold}
 label{vertical-align:middle;cursor:pointer}
 :before, :after {box-sizing:inherit}
 
-button{font-family:inherit;appearance:none;border:0;border-radius:0;background:none;cursor:pointer}
+button{font-family:inherit;font-size:inherit;appearance:none;border:0;border-radius:0;background:none;cursor:pointer}
 button:disabled,
 button[disabled]{-webkit-tap-highlight-color:transparent}
 a{text-decoration:none;color:inherit}

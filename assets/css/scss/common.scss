@@ -1122,23 +1122,19 @@ header {
     position: relative;
 }
 .contents {
-    max-width: $max-width;
-    margin: 0 auto;
-    padding: 40px 16px;
+    padding: 20px 16px;
     &.main {
         padding: 0 16px 30px;
-        max-width: 100%;
     }
-    &.service {
-        padding: 20px 16px;
-        max-width: 100%;
+    &.forms {
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 40px 16px;
+    }
+    &.details {
         .tit-h2 {
             font-family: 'Montserrat';
         }
-    }
-    &.terms {
-        padding: 30px 16px 40px;
-        max-width: 100%;
     }
     .border-box {
         margin:20px -16px 0;

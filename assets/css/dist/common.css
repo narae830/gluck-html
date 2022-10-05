@@ -1357,24 +1357,18 @@ header .btn-menu:before {
 }
 
 .contents {
+  padding: 20px 16px;
+}
+.contents.main {
+  padding: 0 16px 30px;
+}
+.contents.forms {
   max-width: 640px;
   margin: 0 auto;
   padding: 40px 16px;
 }
-.contents.main {
-  padding: 0 16px 30px;
-  max-width: 100%;
-}
-.contents.service {
-  padding: 20px 16px;
-  max-width: 100%;
-}
-.contents.service .tit-h2 {
+.contents.details .tit-h2 {
   font-family: "Montserrat";
-}
-.contents.terms {
-  padding: 30px 16px 40px;
-  max-width: 100%;
 }
 .contents .border-box {
   margin: 20px -16px 0;

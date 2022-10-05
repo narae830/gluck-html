@@ -4,8 +4,8 @@ function modalShow(target) {
     $.get(target,function(data) {
         var posts = $(data).filter('.modal-layer');
         $('#modal-wrapper').append(posts);
-        modalResize();
         modalClose();
+        modalResize();
     });
 }
 function modalClose() {
@@ -20,6 +20,17 @@ function modalClose() {
                 $('body').css('overflow', '');
             }
         })
+    });
+}
+function modalResize() {
+    $('.modal-layer').each(function(){
+        var $this = $(this);
+        var layerBox = $('.layer-box');
+        if(layerBox.outerHeight() > $this.height()){
+            $this.css({'justify-content':'flex-start'});
+        }else{
+            $this.css({'justify-content':''});
+        }
     });
 }
 
@@ -45,18 +56,6 @@ function modalClose() {
             var moveScroll = tabList.children('li.on').position().left - tabList.css('padding-left').replace(/[^-\d\.]/g, '');
             tabList.scrollLeft(moveScroll)
         })
-    }
-
-    function modalResize() {
-        $('.modal-layer').each(function(){
-            var $this = $(this);
-            var layerBox = $('.layer-box');
-            if(layerBox.outerHeight() > $this.height()){
-                $this.css({'justify-content':'flex-start'});
-            }else{
-                $this.css({'justify-content':''});
-            }
-        });
     }
     function gnbMenu() {
         $('.gnb').css({left: '-100%'});

@@ -81,7 +81,6 @@ function modalClose() {
         },
         "resize":function(){
             modalResize();
-            setTabScroll();
         },
         "scroll":function(){
         }

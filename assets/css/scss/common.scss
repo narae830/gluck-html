@@ -1900,6 +1900,7 @@ button[class^=pbtn-] {
     }
 }
 
+/* about us */
 .about-visual{
     margin: -20px -16px 80px;
 }
@@ -1928,7 +1929,36 @@ button[class^=pbtn-] {
     }
     .ad-txt2 {
         margin-top:10px;
+        padding-top: 16px;
         color:$color-gray;
         border-top: 1px solid $color-line;
+    }
+}
+
+/* faq */
+.faq-list {
+    &>li {
+        border-bottom: 1px solid $color-line;
+    }
+    .acc-head {
+        display: block;
+        position: relative;
+        padding: 18px 40px 18px 0;
+        background: url(#{$path-image}/ico_arrow_exp.png) right 10px top 50% no-repeat;
+        background-size: 14px auto;
+    }
+    .acc-cont {
+        display: none;
+        padding: 16px 10px;
+        color: $color-gray;
+        border-top: 1px solid $color-line;
+        background-color: #fafafa;
+    }
+}
+.faq-area {
+    .faq-tit {
+        margin: 35px 0 5px;
+        color: $color-black;
+        font-size: 24px;
     }
 }

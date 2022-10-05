@@ -2145,6 +2145,7 @@ button[class^=pbtn-] {
   background-position: 50% -402px;
 }
 
+/* about us */
 .about-visual {
   margin: -20px -16px 80px;
 }
@@ -2174,6 +2175,32 @@ button[class^=pbtn-] {
 }
 .about-detail .ad-txt2 {
   margin-top: 10px;
+  padding-top: 16px;
   color: #757575;
   border-top: 1px solid #eee;
+}
+
+/* faq */
+.faq-list > li {
+  border-bottom: 1px solid #eee;
+}
+.faq-list .acc-head {
+  display: block;
+  position: relative;
+  padding: 18px 40px 18px 0;
+  background: url(../images/ico_arrow_exp.png) right 10px top 50% no-repeat;
+  background-size: 14px auto;
+}
+.faq-list .acc-cont {
+  display: none;
+  padding: 16px 10px;
+  color: #757575;
+  border-top: 1px solid #eee;
+  background-color: #fafafa;
+}
+
+.faq-area .faq-tit {
+  margin: 35px 0 5px;
+  color: #212121;
+  font-size: 24px;
 }/*# sourceMappingURL=common.css.map */

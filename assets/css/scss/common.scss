@@ -193,10 +193,9 @@
     position: relative;
     margin: 24px 0;
     min-height: 32px;
-    .btn-filter {
+    .pbtn-filter {
         width: 32px;
         height: 32px;
-        font-size: 0;
         &:before {
             content: '';
             display: inline-block;
@@ -430,7 +429,7 @@
         border: 1px solid $color-black;
         border-radius: 20px;
     }
-    .btn-srch {
+    .pbtn-srch {
         position: absolute;
         top: 0;
         right: 0;
@@ -895,12 +894,10 @@
         }
     }
 }
-.btn-close {
+.pbtn-close {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 9px;
-    font-size: 0;
+    top: 0;
+    right: 0;
     &:before {
         content: '';
         display: block;
@@ -911,57 +908,56 @@
     }
 }
 
+button[class^=pbtn-] {
+    width: 56px;
+    height: 56px;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pbtn-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &:before {
+        content: '';
+        display:block;
+        width: 12px;
+        height: 20px;
+        background: svg(btn-back, 212121) no-repeat;
+    }
+}
+.pbtn-enqy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 26px;
+        height: 25px;
+        background: url(#{$path-image}/ico_enquiry.png) 0 0 no-repeat;
+        background-size: 100% auto;
+    }
+}
+.pbtn-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url(#{$path-image}/ico_menu.png) 0 0 no-repeat;
+        background-size: 100% auto;
+    }
+}
+
 /* layout */
 .wrapper {
     min-width: $min-width;
-}
-header {
-    button[class^=btn-] {
-        width: 56px;
-        height: 56px;
-        font-size: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .btn-back {
-        position: absolute;
-        top: 0;
-        left: 0;
-        &:before {
-            content: '';
-            display:block;
-            width: 12px;
-            height: 20px;
-            background: svg(btn-back, 212121) no-repeat;
-        }
-    }
-    .btn-enqy {
-        position: absolute;
-        top: 0;
-        right: 0;
-        &:before {
-            content: '';
-            display: inline-block;
-            width: 26px;
-            height: 25px;
-            background: url(#{$path-image}/ico_enquiry.png) 0 0 no-repeat;
-            background-size: 100% auto;
-        }
-    }
-    .btn-menu {
-        position: absolute;
-        top: 0;
-        left: 0;
-        &:before {
-            content: '';
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            background: url(#{$path-image}/ico_menu.png) 0 0 no-repeat;
-            background-size: 100% auto;
-        }
-    }
 }
 .header {
     width: 100%;
@@ -1901,5 +1897,38 @@ header {
     }
     .svc-o:before {
         background-position: 50% -402px;
+    }
+}
+
+.about-visual{
+    margin: -20px -16px 80px;
+}
+.about-head{
+    .ah-txt1 {
+        font-size: 22px;
+        color:$color-black;
+        line-height: 1.8;
+    }
+    .ah-txt2 {
+        margin-top:10px;
+    }
+}
+.about-detail{
+    margin-top: 40px;
+    border-top: 6px solid $color-line;
+    .ad-txt1 {
+        display: block;
+        margin-top:30px;
+        font-size: 18px;
+        color:$color-point;
+        letter-spacing: -1px;
+        &:first-child {
+            margin-top: 20px;
+        }
+    }
+    .ad-txt2 {
+        margin-top:10px;
+        color:$color-gray;
+        border-top: 1px solid $color-line;
     }
 }

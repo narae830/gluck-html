@@ -59,11 +59,11 @@ function modalResize() {
     }
     function gnbMenu() {
         $('.gnb').css({left: '-100%'});
-        $('.header-area .btn-menu').click(function(){
+        $('.header-area .pbtn-menu').click(function(){
             $('body').css('overflow', 'hidden');
             $('.gnb').show().animate({left:'0'}, 250);
         });
-        $('.gnb .btn-close').click(function(){
+        $('.gnb .pbtn-close').click(function(){
             $('body').css('overflow', '');
             $('.gnb').animate({left:'-100%'}, 250, function(){
                 $('.gnb').hide();

@@ -427,12 +427,11 @@ input::-ms-clear {
   margin: 24px 0;
   min-height: 32px;
 }
-.frm-category .btn-filter {
+.frm-category .pbtn-filter {
   width: 32px;
   height: 32px;
-  font-size: 0;
 }
-.frm-category .btn-filter:before {
+.frm-category .pbtn-filter:before {
   content: "";
   display: inline-block;
   width: 24px;
@@ -668,14 +667,14 @@ input::-ms-clear {
   border: 1px solid #212121;
   border-radius: 20px;
 }
-.frm-search .btn-srch {
+.frm-search .pbtn-srch {
   position: absolute;
   top: 0;
   right: 0;
   width: 40px;
   height: 40px;
 }
-.frm-search .btn-srch:before {
+.frm-search .pbtn-srch:before {
   content: "";
   display: inline-block;
   width: 24px;
@@ -1130,14 +1129,12 @@ input::-ms-clear {
   background-size: 100% auto;
 }
 
-.btn-close {
+.pbtn-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 9px;
-  font-size: 0;
+  top: 0;
+  right: 0;
 }
-.btn-close:before {
+.pbtn-close:before {
   content: "";
   display: block;
   width: 18px;
@@ -1146,12 +1143,7 @@ input::-ms-clear {
   background-size: 100% auto;
 }
 
-/* layout */
-.wrapper {
-  min-width: 320px;
-}
-
-header button[class^=btn-] {
+button[class^=pbtn-] {
   width: 56px;
   height: 56px;
   font-size: 0;
@@ -1159,24 +1151,26 @@ header button[class^=btn-] {
   justify-content: center;
   align-items: center;
 }
-header .btn-back {
+
+.pbtn-back {
   position: absolute;
   top: 0;
   left: 0;
 }
-header .btn-back:before {
+.pbtn-back:before {
   content: "";
   display: block;
   width: 12px;
   height: 20px;
   background: url("data:image/svg+xml,%0A%3Csvg width='12' height='20' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.4741 0L12 1.45688L3.0519 10L12 18.5431L10.4741 20L0 10L10.4741 0Z' fill='%23212121'/%3E%3C/svg%3E%0A") no-repeat;
 }
-header .btn-enqy {
+
+.pbtn-enqy {
   position: absolute;
   top: 0;
   right: 0;
 }
-header .btn-enqy:before {
+.pbtn-enqy:before {
   content: "";
   display: inline-block;
   width: 26px;
@@ -1184,18 +1178,24 @@ header .btn-enqy:before {
   background: url(../images/ico_enquiry.png) 0 0 no-repeat;
   background-size: 100% auto;
 }
-header .btn-menu {
+
+.pbtn-menu {
   position: absolute;
   top: 0;
   left: 0;
 }
-header .btn-menu:before {
+.pbtn-menu:before {
   content: "";
   display: inline-block;
   width: 24px;
   height: 24px;
   background: url(../images/ico_menu.png) 0 0 no-repeat;
   background-size: 100% auto;
+}
+
+/* layout */
+.wrapper {
+  min-width: 320px;
 }
 
 .header {
@@ -2143,4 +2143,37 @@ header .btn-menu:before {
 }
 .main-link .svc-o:before {
   background-position: 50% -402px;
+}
+
+.about-visual {
+  margin: -20px -16px 80px;
+}
+
+.about-head .ah-txt1 {
+  font-size: 22px;
+  color: #212121;
+  line-height: 1.8;
+}
+.about-head .ah-txt2 {
+  margin-top: 10px;
+}
+
+.about-detail {
+  margin-top: 40px;
+  border-top: 6px solid #eee;
+}
+.about-detail .ad-txt1 {
+  display: block;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #3EB6ED;
+  letter-spacing: -1px;
+}
+.about-detail .ad-txt1:first-child {
+  margin-top: 20px;
+}
+.about-detail .ad-txt2 {
+  margin-top: 10px;
+  color: #757575;
+  border-top: 1px solid #eee;
 }/*# sourceMappingURL=common.css.map */

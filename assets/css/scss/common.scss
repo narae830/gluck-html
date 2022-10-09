@@ -320,7 +320,7 @@
 }
 .info-form {
     position: relative;
-    margin-top: 20px;
+    margin-top: 40px;
     &:first-child {
         margin-top: 0;
     }
@@ -332,14 +332,12 @@
         .frm-label {
             display:block;
             margin-bottom: 10px;
-            color: #424242;
             font-weight: 500;
         }
     }
 }
 .agree-form {
-    margin-top: 30px;
-    color: $color-gray;
+    margin-top: 60px;
     .check-all {
         margin-bottom: 12px;
         padding-bottom: 12px;
@@ -351,6 +349,9 @@
                 font-size: 16px;
             }
         }
+    }
+    .check-list {
+        color: $color-gray;
     }
 }
 .itm-star {
@@ -696,13 +697,14 @@
     }
 }
 .btn-stiky {
-    margin: 40px -16px -40px;
+    margin: 60px -16px -40px;
     height: 48px;
     .btn-area {
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
+        margin-top: 0;
         .btn-base {
             border-radius: 0;
         }
@@ -1268,9 +1270,13 @@ button[class^=pbtn-] {
     }
 }
 .signup-desc {
-    margin-bottom: 80px;
     color: $color-black;
     font-size: 24px;
+}
+.signup-form {
+    .frm-con {
+        margin-top: 40px;
+    }
 }
 
 /* service */

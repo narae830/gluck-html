@@ -63,15 +63,15 @@ function modalResize() {
             wrap.on('click',function(e){
                 e.preventDefault();
                 var $this = $(this);
-                var val = $this.attr('aria-expanded');
+                var val = $this.hasClass('active');
                 var con = $this.next('.acc-cont');
-                if(val != 'true'){
-                    $this.attr('aria-expanded','true');
+                if(!val){
+                    $this.addClass('active');
                     con.hide();
                     con.stop().slideDown();
                 }else{
                     con.stop().slideUp(function(){
-                        $this.attr('aria-expanded','false');
+                        $this.removeClass('active');
                     });
                 }
             });

@@ -850,12 +850,7 @@ input::-ms-clear {
   line-height: 46px;
   border-radius: 20px;
 }
-
-.btn-l2 {
-  line-height: 46px;
-  border-radius: 2px;
-}
-.btn-l2.ico-google:before {
+.btn-l.ico-google:before {
   content: "";
   position: absolute;
   top: 50%;

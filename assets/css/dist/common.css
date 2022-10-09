@@ -920,7 +920,7 @@ input::-ms-clear {
   display: flex;
   flex-wrap: wrap;
   gap: 12px 8px;
-  margin-top: 32px;
+  margin-top: 60px;
 }
 .btn-area.btn-grid {
   margin-top: 20px;

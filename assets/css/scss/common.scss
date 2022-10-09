@@ -1216,13 +1216,14 @@ button[class^=pbtn-] {
         }
         .btn-base {
             margin-top: 24px;
+            font-size: 16px;
         }
     }
     .link-find {
         margin-top: 12px;
         text-align: right;
         .link-text {
-            color: $color-gray;
+            color: $color-black;
             font-size: 12px;
         }
     }

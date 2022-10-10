@@ -44,7 +44,6 @@ button{font-family:inherit;font-size:inherit;appearance:none;border:0;border-rad
 button:disabled,
 button[disabled]{-webkit-tap-highlight-color:transparent}
 a{text-decoration:none;color:inherit}
-a:hover{color:inherit}
 a,button{@include tap-highlight}
 a,area,button,[role="button"],input:not([type="range"]),label,select,summary,textarea{-ms-touch-action:manipulation;touch-action:manipulation}
 input,textarea,select{color:inherit;font-family:inherit;font-size:1em;appearance:none;border:0;border-radius:0;background:0;box-shadow:none;outline:0}

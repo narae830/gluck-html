@@ -63,8 +63,25 @@
     margin-top: 16px;
 }
 .txt-link {
+    display: inline-block;
     text-decoration: underline;
     text-underline-position: under;
+}
+.txt-link2 {
+    display: inline-block;
+    color: $color-point;
+    font-size: 14px;
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin: -3px 0 0 4px;
+        vertical-align: middle;
+        border: solid $color-point;
+        border-width: 1px 1px 0 0;
+        transform: rotate(45deg)
+    }
 }
 .txt-desc {
     margin-top: 5px;
@@ -354,10 +371,13 @@
 }
 .itm-star {
     display: inline-block;
+    font-size: 0;
+    vertical-align: 14px;
     .ico-star {
         display: inline-block;
-        width: 18px;
-        height: 18px;
+        width: 16px;
+        height: 16px;
+        margin-right: 1px;
         vertical-align: top;
         background: svg(ico-star, none, 757575) repeat;
         background-size: 100% auto;
@@ -1360,13 +1380,13 @@ button[class^=pbtn-] {
     }
     .desc2 {
         display: block;
-        margin-top: 4px;
+        margin-top: 2px;
         color: $color-gray;
         font-size: 13px;
         @include ellipsis(1);
     }
     .price {
-        margin-top: 4px;
+        margin-top: 2px;
         font-size: 13px;
         font-weight: 500;
         .cost {
@@ -1388,6 +1408,10 @@ button[class^=pbtn-] {
         &+.name {
             padding-right: 50px;
         }
+    }
+    .date {
+        font-size: 13px;
+        color: $color-light-gray;
     }
 }
 .list-type1 {
@@ -1522,6 +1546,38 @@ button[class^=pbtn-] {
         }
         .txt-desc {
             margin-top: 10px;
+        }
+    }
+}
+.list-type5 {
+    &>li {
+        margin-top: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $color-line;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    .smmry {
+        display: flex;
+        flex-wrap: wrap;
+        .thum-fit {
+            flex: 0 0 auto;
+            margin-right: 12px;
+            width: 100px;
+            height: 100px;
+        }
+        .srvc-con {
+            position: relative;
+            width: calc(100% - 112px);
+            .date {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .txt-link2 {
+                margin-top: 4px;
+            }
         }
     }
 }

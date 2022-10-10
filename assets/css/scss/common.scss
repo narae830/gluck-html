@@ -408,11 +408,11 @@
 }
 .btn-like {
     display: inline-block;
-    width: 56px;
-    height: 56px;
+    width: 24px;
+    height: 24px;
     @include text-hidden;
     background: svg(ico-like, none, BDBDBD) no-repeat;
-    background-size: 16px auto;
+    background-size: 18px auto;
     background-position: 50% 50%;
     &.is-like {
         background-image: svg(ico-like, 3EB6ED, 3EB6ED);
@@ -457,7 +457,6 @@
     position: relative;
     height: 48px;
     background: #fff;
-    z-index: $z-sticky;
     .tab-list {
         display: flex;
         flex-wrap: nowrap;
@@ -479,15 +478,17 @@
                 display: block;
                 position: relative;
                 padding: 0 16px;
-                color: $color-gray;
-                line-height: 47px;
+                color: #BDBDBD;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 48px;
                 text-align: center;
             }
         }
         &>li.on {
             .tab  {
-                color: $color-black;
-                font-weight: 500;
+                color: $color-point;
+                font-weight: 600;
                 &:after {
                     content: '';
                     position: absolute;
@@ -495,7 +496,7 @@
                     left: 0;
                     right: 0;
                     height: 2px;
-                    background: $color-black;
+                    background: $color-point;
                 }
             }
         }
@@ -503,9 +504,10 @@
     &.tab-fixed {
         .tab-list {
             position: fixed;
-            top: 56px;
+            top: 55px;
             left: 0;
             right: 0;
+            z-index: $z-sticky;
         }
     }
 }
@@ -696,8 +698,8 @@
         flex: 1 0 0;
     }
 }
-.btn-stiky {
-    margin: 60px -16px -40px;
+.btn-sticky {
+    margin: 60px -16px -60px;
     height: 48px;
     .btn-area {
         position: fixed;
@@ -705,6 +707,7 @@
         left: 0;
         width: 100%;
         margin-top: 0;
+        z-index: $z-sticky;
         .btn-base {
             border-radius: 0;
         }
@@ -721,6 +724,7 @@
 
 /* table */
 .tbl-type1 {
+    font-size: 12px;
     text-align: center;
     border-bottom: 1px solid $color-line;
     thead th {
@@ -967,7 +971,7 @@ button[class^=pbtn-] {
         height: 56px;
         border-bottom: 1px solid $color-line;
         background: #fff;
-        z-index: $z-gnb;
+        z-index: $z-sticky;
         .tit-h1 {
             margin: 0 56px;
             font-size: 16px;
@@ -1123,14 +1127,13 @@ button[class^=pbtn-] {
     position: relative;
 }
 .contents {
-    padding: 20px 16px;
+    padding: 40px 16px 60px;
     &.main {
         padding: 0 16px 40px;
     }
     &.forms {
         max-width: $max-width;
         margin: 0 auto;
-        padding: 40px 16px;
     }
     &.details {
         .tit-h2 {
@@ -1138,12 +1141,9 @@ button[class^=pbtn-] {
         }
     }
     .border-box {
-        margin:20px -16px 0;
-        padding: 20px 16px 0;
+        margin: 40px -16px 0;
+        padding: 40px 16px 0;
         border-top: 10px solid #F4F4F4;
-        .list-type2:first-child {
-            margin-top: -20px;
-        }
     }
 }
 
@@ -1311,8 +1311,9 @@ button[class^=pbtn-] {
     }
 }
 .count {
-    margin-top: 2px;
+    margin-top: 4px;
     font-size: 12px;
+    line-height: 1.4;
     &>span {
         position: relative;
         display: inline-block;
@@ -1350,24 +1351,24 @@ button[class^=pbtn-] {
 .srvc-con {
     .name {
         display: block;
-        font-size: 16px;
+        color: $color-black;
+        font-size: 17px;
         @include ellipsis(1);
     }
     .desc {
         display: block;
-        font-size: 12px;
-        @include ellipsis(1);
+        font-size: 13px;
     }
     .desc2 {
         display: block;
         margin-top: 4px;
         color: $color-gray;
-        font-size: 12px;
+        font-size: 13px;
         @include ellipsis(1);
     }
     .price {
         margin-top: 4px;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 500;
         .cost {
             margin-left: 20px;
@@ -1381,7 +1382,7 @@ button[class^=pbtn-] {
         top: 19px;
         right: 15px;
         padding: 0 8px;
-        font-size: 10px;
+        font-size: 11px;
         line-height: 12px;
         border: 1px solid #777;
         border-radius: 14px;
@@ -1393,7 +1394,7 @@ button[class^=pbtn-] {
 .list-type1 {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 24px 12px;
     &>li {
         position: relative;
         width: calc(50% - 6px);
@@ -1413,6 +1414,11 @@ button[class^=pbtn-] {
                 left: 0;
             }
         }
+        .srvc-con {
+            .count {
+                margin-top: 10px;
+            }
+        }
     }
     .other {
         position: absolute;
@@ -1420,27 +1426,31 @@ button[class^=pbtn-] {
         left: 0;
         width: 100%;
         padding-bottom: 100%;
-        .btn-like {
+        .btn-like2 {
             position: absolute;
             right: 7px;
             bottom: 10px;
             width: 36px;
             height: 36px;
             border-radius: 100%;
-            background: svg(ico-like, none, ffffff) no-repeat;
-            background-size: 18px auto;
-            background-position: 50% 50%;
-            background-color: $color-point;
+            background-color: rgba(62,182,237,.3);
             @include text-hidden;
             z-index: 1;
-            &.is-like {
+            &:before {
+                content: '';
+                display: block;
+                height: 100%;
+                background: svg(ico-like, none, ffffff) no-repeat;
+                background-size: 18px auto;
+                background-position: 50% 50%;
+            }
+            &.is-like:before {
                 background-image: svg(ico-like, ffffff, ffffff);
             }
         }
     }
 }
 .list-type2 {
-    margin:0 -16px;
     &>li {
         position: relative;
         border-bottom: 1px solid $color-line;
@@ -1448,7 +1458,7 @@ button[class^=pbtn-] {
     .smmry {
         display: block;
         position: relative;
-        padding: 16px 56px 16px 16px;
+        padding: 16px 48px 16px 0;
     }
     .other {
         position: absolute;
@@ -1692,7 +1702,7 @@ button[class^=pbtn-] {
 
 /* service details */
 .service-visual {
-    margin: -20px -16px 0;
+    margin: -40px -16px 0;
     img {
         width: 100%;
     }
@@ -1718,15 +1728,13 @@ button[class^=pbtn-] {
     padding: 30px 0;
     color: $color-headline;
     &:first-child {
-        margin-top: -20px;
+        margin-top: -40px;
     }
     .btn-like {
         position: absolute;
         top: 32px;
         right: 0;
-        width: 24px;
-        height: 24px;
-        background-size: 20px auto;
+        background-size: 18px auto;
     }
     .name {
         display: block;
@@ -1935,7 +1943,7 @@ button[class^=pbtn-] {
 
 /* about us */
 .about-visual{
-    margin: -20px -16px 60px;
+    margin: -40px -16px 60px;
     text-align: center;
 }
 .about-head{
@@ -1964,7 +1972,7 @@ button[class^=pbtn-] {
     }
     .ad-txt3 {
         display: block;
-        margin: 60px 0;
+        margin-top: 60px;
         color: #135792;
         font-size: 17px;
         text-align: center;

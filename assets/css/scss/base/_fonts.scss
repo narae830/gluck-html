@@ -46,6 +46,15 @@ $path-fonts:"../fonts";
 		 url(#{$path-fonts}/roboto-medium.woff) format('woff');
 }
 @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(#{$path-fonts}/roboto-bold.eot) format('eot'),
+         url(#{$path-fonts}/roboto-bold.woff2) format('woff2'),
+		 url(#{$path-fonts}/roboto-bold.woff) format('woff');
+}
+@font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;

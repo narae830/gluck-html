@@ -48,7 +48,7 @@
 }
 .tit-h2 {
     margin: 24px 0 10px;
-    font-size: 18px;
+    font-size: 19px;
     &:first-child {
         margin-top:0;
     }
@@ -56,7 +56,7 @@
 .tit-dth {
     display: block;
     margin: 24px 0 10px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
 }
 .txt-info {
@@ -69,12 +69,11 @@
 .txt-desc {
     margin-top: 5px;
     color: $color-gray;
-    font-size: 14px;
 }
 .caution {
     margin-top: 16px;
     color: $color-gray;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 /* form */
@@ -138,7 +137,7 @@
         display: block;
         min-height: 24px;
         margin: -24px 0 0 0;
-        padding: 2px 0 0 32px;
+        padding: 0 0 0 32px;
     }
 }
 .frm-group {
@@ -224,7 +223,7 @@
                 min-width: 65px;
                 padding: 0 5px;
                 color: #7E8996;
-                font-size: 12px;
+                font-size: 13px;
                 line-height: 30px;
                 text-align: center;
                 border: 1px solid #C0D3EA;
@@ -284,7 +283,7 @@
         min-width: 65px;
         padding: 0 10px;
         color: #7E8996;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 30px;
         text-align: center;
         border: 1px solid #C0D3EA;
@@ -303,12 +302,12 @@
 .msg-error {
     margin-top: 8px;
     color: $color-notify;
-    font-size: 12px;
+    font-size: 13px;
 }
 .msg-guide {
     margin-top: 8px;
     color: $color-light-gray;
-    font-size: 12px;
+    font-size: 13px;
 }
 .check-list {
     &>li+li {
@@ -615,6 +614,7 @@
     }
 }
 .btn-l {
+    font-size: 16px;
     line-height:46px;
     border-radius: 20px;
     &.ico-google:before {
@@ -633,7 +633,7 @@
     display: inline-block;
     width: auto;
     padding: 0 15px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 24px;
     border-radius: 10px;
 }
@@ -715,7 +715,7 @@
     text-align: center;
     .txt-link {
         color: $color-gray;
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
@@ -752,7 +752,6 @@
 .swiper-slide {
     flex-shrink: 0;
     text-align: center;
-    font-size: 18px;
     background: #fff;
     transition-property: transform;
     a {
@@ -1218,7 +1217,6 @@ button[class^=pbtn-] {
         }
         .btn-base {
             margin-top: 24px;
-            font-size: 16px;
         }
     }
     .link-find {
@@ -1906,6 +1904,7 @@ button[class^=pbtn-] {
 /* about us */
 .about-visual{
     margin: -20px -16px 60px;
+    text-align: center;
 }
 .about-head{
     .ah-txt1 {

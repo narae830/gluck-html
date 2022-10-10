@@ -34,6 +34,13 @@
   src: url(../fonts/roboto-medium.eot) format("eot"), url(../fonts/roboto-medium.woff2) format("woff2"), url(../fonts/roboto-medium.woff) format("woff");
 }
 @font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/roboto-bold.eot) format("eot"), url(../fonts/roboto-bold.woff2) format("woff2"), url(../fonts/roboto-bold.woff) format("woff");
+}
+@font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -98,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   max-height: 100%;
   border: 0;
   vertical-align: top;
@@ -285,7 +292,7 @@ input::-ms-clear {
 
 .tit-h2 {
   margin: 24px 0 10px;
-  font-size: 18px;
+  font-size: 19px;
 }
 .tit-h2:first-child {
   margin-top: 0;
@@ -294,7 +301,7 @@ input::-ms-clear {
 .tit-dth {
   display: block;
   margin: 24px 0 10px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -310,13 +317,12 @@ input::-ms-clear {
 .txt-desc {
   margin-top: 5px;
   color: #757575;
-  font-size: 14px;
 }
 
 .caution {
   margin-top: 16px;
   color: #757575;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 /* form */
@@ -384,7 +390,7 @@ input::-ms-clear {
   display: block;
   min-height: 24px;
   margin: -24px 0 0 0;
-  padding: 2px 0 0 32px;
+  padding: 0 0 0 32px;
 }
 
 .frm-group {
@@ -472,7 +478,7 @@ input::-ms-clear {
   min-width: 65px;
   padding: 0 5px;
   color: #7E8996;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 30px;
   text-align: center;
   border: 1px solid #C0D3EA;
@@ -527,7 +533,7 @@ input::-ms-clear {
   min-width: 65px;
   padding: 0 10px;
   color: #7E8996;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 30px;
   text-align: center;
   border: 1px solid #C0D3EA;
@@ -547,13 +553,13 @@ input::-ms-clear {
 .msg-error {
   margin-top: 8px;
   color: #D50000;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .msg-guide {
   margin-top: 8px;
   color: #9E9E9E;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .check-list > li + li {
@@ -862,6 +868,7 @@ input::-ms-clear {
 }
 
 .btn-l {
+  font-size: 16px;
   line-height: 46px;
   border-radius: 20px;
 }
@@ -881,7 +888,7 @@ input::-ms-clear {
   display: inline-block;
   width: auto;
   padding: 0 15px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 24px;
   border-radius: 10px;
 }
@@ -968,7 +975,7 @@ input::-ms-clear {
 }
 .link-area .txt-link {
   color: #757575;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 /* table */
@@ -1005,7 +1012,6 @@ input::-ms-clear {
 .swiper-slide {
   flex-shrink: 0;
   text-align: center;
-  font-size: 18px;
   background: #fff;
   transition-property: transform;
 }
@@ -1466,7 +1472,6 @@ button[class^=pbtn-] {
 }
 .login-wrap .login-form .btn-base {
   margin-top: 24px;
-  font-size: 16px;
 }
 .login-wrap .link-find {
   margin-top: 12px;
@@ -2163,6 +2168,7 @@ button[class^=pbtn-] {
 /* about us */
 .about-visual {
   margin: -20px -16px 60px;
+  text-align: center;
 }
 
 .about-head .ah-txt1 {

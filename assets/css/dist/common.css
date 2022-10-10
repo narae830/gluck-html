@@ -321,7 +321,6 @@ input::-ms-clear {
 
 .caution {
   margin-top: 16px;
-  color: #757575;
   font-size: 13px;
 }
 
@@ -558,7 +557,7 @@ input::-ms-clear {
 
 .msg-guide {
   margin-top: 8px;
-  color: #9E9E9E;
+  color: #757575;
   font-size: 13px;
 }
 
@@ -1474,7 +1473,7 @@ button[class^=pbtn-] {
 
 /* login */
 .login-wrap .login-logo {
-  padding: 8vh 0;
+  padding: 6vh 0 8vh;
   text-align: center;
 }
 .login-wrap .login-logo .logo {
@@ -1498,7 +1497,7 @@ button[class^=pbtn-] {
 }
 .login-wrap .link-find .link-text {
   color: #212121;
-  font-size: 12px;
+  font-size: 13px;
 }
 .login-wrap .link-etc {
   margin-top: 60px;
@@ -1822,6 +1821,7 @@ button[class^=pbtn-] {
   flex: 0 1 100%;
 }
 .reply-box .cont .name {
+  color: #212121;
   font-weight: 500;
 }
 .reply-box .cont .itm-star {
@@ -1832,7 +1832,7 @@ button[class^=pbtn-] {
 }
 .reply-box .cont .date {
   margin-top: 2px;
-  font-size: 12px;
+  font-size: 13px;
   color: #757575;
 }
 .reply-box .del {

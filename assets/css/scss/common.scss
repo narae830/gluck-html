@@ -72,7 +72,6 @@
 }
 .caution {
     margin-top: 16px;
-    color: $color-gray;
     font-size: 13px;
 }
 
@@ -306,7 +305,7 @@
 }
 .msg-guide {
     margin-top: 8px;
-    color: $color-light-gray;
+    color: $color-gray;
     font-size: 13px;
 }
 .check-list {
@@ -1220,7 +1219,7 @@ button[class^=pbtn-] {
 /* login */
 .login-wrap {
     .login-logo {
-        padding: 8vh 0;
+        padding: 6vh 0 8vh;
         text-align: center;
         .logo {
             display: inline-block;
@@ -1245,7 +1244,7 @@ button[class^=pbtn-] {
         text-align: right;
         .link-text {
             color: $color-black;
-            font-size: 12px;
+            font-size: 13px;
         }
     }
     .link-etc {
@@ -1563,6 +1562,7 @@ button[class^=pbtn-] {
     .cont {
         flex: 0 1 100%;
         .name {
+            color: $color-black;
             font-weight: 500;
         }
         .itm-star {
@@ -1573,7 +1573,7 @@ button[class^=pbtn-] {
         }
         .date {
             margin-top: 2px;
-            font-size: 12px;
+            font-size: 13px;
             color: $color-gray;
         }
     }

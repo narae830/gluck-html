@@ -426,7 +426,7 @@
         height: 40px;
         padding: 0 10px;
         line-height: 38px;
-        border: 1px solid $color-black;
+        border: 1px solid $color-point;
         border-radius: 20px;
     }
     .pbtn-srch {
@@ -1003,6 +1003,9 @@ button[class^=pbtn-] {
                 background-size: 100% auto;
             }
         }
+        .frm-search {
+            margin-top: 8px;
+        }
     }
     &~.header {
         .header-title {
@@ -1056,47 +1059,52 @@ button[class^=pbtn-] {
             }
             .name {
                 color: $color-black;
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 500;
             }
         }
         .menu {
-            margin-top: 40px;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid $color-line;
             &>li {
                 a{
                     display: block;
                     color: $color-black;
-                    font-size: 16px;
+                    font-size: 14px;
                     font-weight: 500;
-                    line-height: 50px;
+                    line-height: 52px;
                 }
                 a:before {
                     content:'';
                     display: inline-block;
-                    width: 16px;
-                    height: 16px;
-                    margin: -2px 14px 0 0;
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 12px;
                     vertical-align: middle;
-                    background: url(#{$path-image}/ico_gnb.png) 50% -2px no-repeat;
-                    background-size: 20px auto;
+                    background: url(#{$path-image}/ico_gnb.png) 50% 0 no-repeat;
+                    background-size: 100% auto;
                 }
                 .m1:before {
-                    background-position: 50% -39px;
+                    background-position: 50% 0;
                 }
                 .m2:before {
-                    background-position: 50% -2px;
+                    background-position: 50% -24px;
                 }
                 .m3:before {
-                    background-position: 50% -20px;
+                    background-position: 50% -48px;
                 }
                 .m4:before {
-                    background-position: 50% -59px;
+                    background-position: 50% -72px;
                 }
                 .m5:before {
-                    background-position: 50% -79px;
+                    background-position: 50% -96px;
                 }
                 .m6:before {
-                    background-position: 50% -97px;
+                    background-position: 50% -120px;
+                }
+                .logout:before {
+                    background-position: 50% -144px;
                 }
             }
         }
@@ -1117,7 +1125,7 @@ button[class^=pbtn-] {
 .contents {
     padding: 20px 16px;
     &.main {
-        padding: 0 16px 30px;
+        padding: 0 16px 40px;
     }
     &.forms {
         max-width: $max-width;
@@ -1141,51 +1149,64 @@ button[class^=pbtn-] {
 
 .footer {
     position: relative;
-    border-top: 1px solid #DBDBDB;
+    border-top: 1px solid $color-line;
     &-link {
         display: flex;
         align-items: center;
-        padding: 20px 10px;
-        border-bottom: 1px solid #E8E8E8;
+        padding: 15px 0;
+        border-bottom: 1px solid $color-line;
         &>li {
             flex: 1 0 auto;
             color: #676767;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 500;
             text-align: center;
         }
     }
     &-info {
-        padding: 22px 40px;
-        border-bottom: 1px solid #E8E8E8;
+        position: relative;
+        padding: 24px 16px;
+        border-bottom: 1px solid $color-line;
         .ft-help {
-            color: $color-black;
-            line-height: 1.7;
+            .ht {
+                display: block;
+                color: $color-black;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .hd {
+                display: block;
+                margin-top: 4px;
+                color: $color-gray;
+                font-size: 14px;
+                font-weight: 400;
+            }
         }
         .ft-sns {
-            margin-top: 20px;
+            position: absolute;
+            top: 39px;
+            right: 16px;
             .sns {
                 display: inline-block;
-                width: 30px;
-                height: 30px;
-                margin-right: 25px;
+                width: 24px;
+                height: 24px;
+                margin-left: 16px;
                 font-size: 0;
                 vertical-align: top;
                 background: url(#{$path-image}/ico_sns.png) 50% -5px no-repeat;
-                background-size: 40px auto;
+                background-size: 34px auto;
                 &.insta {
                     background-position: 50% -5px;
                 }
                 &.yout {
-                    background-position: 50% -45px;
+                    background-position: 50% -39px;
                 }
             }
         }
         .ft-addr {
             margin-top: 25px;
-            color: $color-gray;
-            font-size: 13px;
-            line-height: 1.7;
+            color: $color-light-gray;
+            font-size: 11px;
         }
     }
     .copyright {
@@ -1802,8 +1823,8 @@ button[class^=pbtn-] {
 
 /* main */
 .main-intro {
-    margin-bottom: 15px;
-    text-align: center;
+    padding: 12px 0;
+    line-height: 1.4;
 }
 .main-visual {
     border-radius: 10px;
@@ -1824,80 +1845,91 @@ button[class^=pbtn-] {
     }
     .swiper-controls {
         position: absolute;
-        bottom: 20px;
-        right: 12px;
+        bottom: 16px;
+        right: 16px;
         padding: 0 5px;
         text-align: center;
-        border-radius: 10px;
+        border-radius: 14px;
         background: rgba(0,0,0,.5);
     }
     .swiper-pagination {
         display: inline-block;
-        color: #fff;
+        color: rgba(255,255,255,.6);
         font-size: 12px;
-        line-height: 26px;
+        line-height: 28px;
+        &-current {
+            color: #fff;
+        }
     }
     .swiper-button-prev,
     .swiper-button-next {
         display: inline-block;
-        padding: 0 10px;
-        color: #fff;
-        font-size: 11px;
+        padding: 0 6px;
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border: solid rgba(255,255,255,.8);
+            vertical-align: middle;
+        }
     }
     .swiper-button-prev {
-        display: inline-block;
         &:before {
-            content: '( ';
+            border-width: 1px 0  0 1px;
+            transform: rotate(-45deg);
         }
     }
     .swiper-button-next {
-        display: inline-block;
         &:before {
-            content: ' )';
+            border-width: 0  1px 1px 0;
+            transform: rotate(-45deg);
         }
     }
 }
 .main-link {
-    margin: 35px -16px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px 0;
+    margin-top: 40px;
     &>li {
-        flex-basis: 33%;
+        flex-basis: 33.3%;
         &:nth-child(-n+2) {
-            flex-basis: 34%;
+            flex-basis: 50%;
         }
     }
     [class^=svc-] {
         display: block;
         height: 100%;
-        line-height: 1.2;
+        color: $color-black;
+        font-size: 13px;
+        line-height: 1.4;
         text-align: center;
         &:before {
             content: '';
             display: block;
-            width: 60px;
-            height: 60px;
-            margin: 0 auto 15px;
-            background: url(#{$path-image}/ico_main.png) 50% -18px  no-repeat;
-            background-size: 96px auto;
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 12px;
+            background: url(#{$path-image}/ico_main.png) 50% -5px  no-repeat;
+            background-size: 58px auto;
         }
     }
     .svc-h:before {
-        background-position: 50% -18px;
+        background-position: 50% -5px;
     }
     .svc-i:before {
-        background-position: 50% -114px;
+        background-position: 50% -60px;
     }
     .svc-f:before {
-        background-position: 50% -210px;
+        background-position: 50% -116px;
     }
     .svc-s:before {
-        background-position: 50% -306px;
+        background-position: 50% -172px;
     }
     .svc-o:before {
-        background-position: 50% -402px;
+        background-position: 50% -228px;
     }
 }
 
@@ -1940,6 +1972,14 @@ button[class^=pbtn-] {
 }
 
 /* faq */
+.faq-tit {
+    margin: 60px 0 28px;
+    color: $color-black;
+    font-size: 24px;
+    &:nth-of-type(1) {
+        margin-top: 40px
+    }
+}
 .faq-list {
     &>li {
         border-bottom: 1px solid $color-line;
@@ -1947,22 +1987,32 @@ button[class^=pbtn-] {
     .acc-head {
         display: block;
         position: relative;
-        padding: 18px 40px 18px 0;
-        background: url(#{$path-image}/ico_arrow_exp.png) right 10px top 50% no-repeat;
-        background-size: 14px auto;
+        padding: 20px 32px 20px 12px;
+        color: $color-black;
+        &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            width: 12px;
+            height: 9px;
+            margin-top: -4px;
+            background: url(#{$path-image}/ico_arrow_exp.png) 0 0 no-repeat;
+            background-size: 100% auto;
+            opacity: .5;
+        }
+        &.active {
+            color: #2288C7;
+            &:before {
+                transform: rotate(180deg)
+            }
+        }
     }
     .acc-cont {
         display: none;
         padding: 16px 10px;
-        color: $color-gray;
         border-top: 1px solid $color-line;
         background-color: #fafafa;
-    }
-}
-.faq-area {
-    .faq-tit {
-        margin: 35px 0 5px;
-        color: $color-black;
-        font-size: 24px;
     }
 }

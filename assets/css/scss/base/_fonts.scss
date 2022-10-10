@@ -28,6 +28,24 @@ $path-fonts:"../fonts";
          url(#{$path-fonts}/notokr-bold.woff) format('woff');
 }
 @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(#{$path-fonts}/roboto-regular.eot) format('eot'),
+         url(#{$path-fonts}/roboto-regular.woff2) format('woff2'),
+		 url(#{$path-fonts}/roboto-regular.woff) format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(#{$path-fonts}/roboto-medium.eot) format('eot'),
+         url(#{$path-fonts}/roboto-medium.woff2) format('woff2'),
+		 url(#{$path-fonts}/roboto-medium.woff) format('woff');
+}
+@font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;

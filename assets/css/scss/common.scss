@@ -1905,16 +1905,15 @@ button[class^=pbtn-] {
 
 /* about us */
 .about-visual{
-    margin: -20px -16px 80px;
+    margin: -20px -16px 60px;
 }
 .about-head{
     .ah-txt1 {
         font-size: 22px;
         color:$color-black;
-        line-height: 1.8;
     }
     .ah-txt2 {
-        margin-top:10px;
+        margin-top:16px;
     }
 }
 .about-detail{
@@ -1922,19 +1921,22 @@ button[class^=pbtn-] {
     border-top: 6px solid $color-line;
     .ad-txt1 {
         display: block;
-        margin-top:30px;
-        font-size: 18px;
-        color:$color-point;
-        letter-spacing: -1px;
-        &:first-child {
-            margin-top: 20px;
-        }
+        margin-top:40px;
+        color: #135792;
+        font-size: 17px;
     }
     .ad-txt2 {
-        margin-top:10px;
-        padding-top: 16px;
+        margin-top:12px;
+        padding-top: 12px;
         color:$color-gray;
         border-top: 1px solid $color-line;
+    }
+    .ad-txt3 {
+        display: block;
+        margin: 60px 0;
+        color: #135792;
+        font-size: 17px;
+        text-align: center;
     }
 }
 

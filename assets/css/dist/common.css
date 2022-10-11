@@ -1355,7 +1355,7 @@ button[class^=pbtn-] {
 .gnb-menu .menu > li a {
   display: block;
   color: #212121;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 52px;
 }
